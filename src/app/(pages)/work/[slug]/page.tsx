@@ -1,5 +1,12 @@
 import { caseStudies } from '@/app/data/caseStudies'
 import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
+
+type Props = {
+  params: {
+    slug: string
+  }
+}
 
 export async function generateStaticParams() {
   return caseStudies.map((study) => ({
@@ -7,7 +14,7 @@ export async function generateStaticParams() {
   }))
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const study = caseStudies.find((study) => study.slug === params.slug)
   
   if (!study) {
@@ -22,7 +29,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default function CaseStudy({ params }: { params: { slug: string } }) {
+export default function CaseStudy({ params }: Props) {
   const study = caseStudies.find((study) => study.slug === params.slug)
   
   if (!study) {
