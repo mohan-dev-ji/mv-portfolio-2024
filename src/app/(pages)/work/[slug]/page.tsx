@@ -2,19 +2,11 @@ import { caseStudies } from '@/app/data/caseStudies'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 
-type Props = {
-  params: {
-    slug: string
-  }
-}
-
-export async function generateStaticParams() {
-  return caseStudies.map((study) => ({
-    slug: study.slug,
-  }))
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}): Promise<Metadata> {
   const study = caseStudies.find((study) => study.slug === params.slug)
   
   if (!study) {
@@ -29,7 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function CaseStudy({ params }: Props) {
+type PageProps = {
+  params: { slug: string }
+}
+
+export default function CaseStudy({
+  params,
+}: PageProps) {
   const study = caseStudies.find((study) => study.slug === params.slug)
   
   if (!study) {
@@ -43,4 +41,11 @@ export default function CaseStudy({ params }: Props) {
       {/* We'll add more detailed case study content later */}
     </article>
   )
+}
+
+// This generates the static paths at build time
+export async function generateStaticParams() {
+  return caseStudies.map((study) => ({
+    slug: study.slug,
+  }))
 }
