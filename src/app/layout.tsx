@@ -1,8 +1,10 @@
-import './globals.css'
-import { inter } from './fonts'
+import { Inter } from "next/font/google";
+import "./globals.css";
 import type { Metadata } from 'next'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Mohan Veraitch | Portfolio',
@@ -15,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="min-h-screen flex flex-col">
+    <html lang="en">
+      <body className={inter.className}>
         <Navbar />
         <main className="flex-grow pt-16">
           {children}

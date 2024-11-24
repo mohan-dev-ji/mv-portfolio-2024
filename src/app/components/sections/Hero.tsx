@@ -7,11 +7,13 @@ const Hero = () => {
       <Image
         src={heroData.image}
         alt="Hero background"
-        layout="fill"
-        objectFit="cover"
+        width={1440}
+        height={698}
+        style={{ objectFit: 'cover' }}
+        // objectFit="cover"
         priority
       />
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">{heroData.title}</h1>
           <p className="text-xl md:text-2xl mb-8">{heroData.subtitle}</p>
