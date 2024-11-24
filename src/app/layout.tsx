@@ -1,4 +1,5 @@
 import './globals.css'
+import { inter } from './fonts'
 import type { Metadata } from 'next'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow pt-16">
