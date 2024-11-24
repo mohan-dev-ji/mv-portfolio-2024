@@ -1,5 +1,8 @@
+"use client"
+
 import Image from 'next/image';
 import { heroData } from '@/app/data/homeHero';
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
@@ -29,9 +32,11 @@ const Hero = () => {
 
           <p className="md:text-p text-s text-secondary mb-6">{heroData.intro}</p>
 
-          <button className="bg-accent text-primary px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition-colors">
+          {/* <button className="bg-accent text-primary px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition-colors">
             {heroData.primary}
-          </button>
+          </button> */}
+          <Button variant="default">Get in Touch</Button>
+          <Button variant="outline">Download CV</Button>
         </div>
         </div>
       </div>
