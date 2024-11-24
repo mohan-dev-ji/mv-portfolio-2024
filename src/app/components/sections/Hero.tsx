@@ -3,11 +3,14 @@
 import Image from 'next/image';
 import { heroData } from '@/app/data/homeHero';
 import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button"
+import Link from 'next/link';
+
 
 const Hero = () => {
   return (
     <div className='relative flex flex-col'>
-    <div className="relative w-full h-[40vh] md:h[80vh] lg:h-[100vh] top-3 flex items-center">
+    <div className="relative w-full h-[50vh] md:h-[80vh] lg:h-[100vh] flex items-center object-contain">
       <div className='absolute inset-0 '>
       <Image
         src={heroData.image}
@@ -21,7 +24,7 @@ const Hero = () => {
         priority
       />
       </div>
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-16 md:px-32 lg:px-32 flex flex-col">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-32 lg:px-32 flex flex-col">
       <div className="w-[250px] md:w-[350px] h-fit">
         <div className="text-left">
           <h3 className="md:text-h3-bold text-p-bold text-secondary">{heroData.top}</h3>
@@ -35,8 +38,14 @@ const Hero = () => {
           {/* <button className="bg-accent text-primary px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition-colors">
             {heroData.primary}
           </button> */}
-          <Button variant="default">Get in Touch</Button>
+          {/* <Button variant="default">Get in Touch</Button> */}
+          <div className=''>
+          <Link href="/contact" className={`${buttonVariants({ variant: "default" })} mr-8 mb-4`}>
+            Get in Touch
+          </Link>
+
           <Button variant="outline">Download CV</Button>
+          </div>
         </div>
         </div>
       </div>

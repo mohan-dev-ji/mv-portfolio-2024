@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Hero from './components/sections/Hero'
+import Work from './components/sections/Work'
 
 export const metadata: Metadata = {
   title: 'Mo | Home',
@@ -10,6 +11,9 @@ export default function Home() {
   return (
     <div className="sm:w-full w-full mx-auto">
       <Hero />
+      <div className="mx-5">
+      <Work />
+      </div>
       <section className="py-20">
         <h1 className="text-h1-bold mb-4">Mo&apos;s Portfolio</h1>
         <p className="text-h1-bold">H1 Bold</p>
