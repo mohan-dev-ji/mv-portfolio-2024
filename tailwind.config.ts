@@ -24,7 +24,7 @@ export default {
         "h3-bold": ["24px", { lineHeight: "140%", fontWeight: "700"}],
         "h3": ["24px", { lineHeight: "140%", fontWeight: "500"}],
         "p-bold": ["16px", { lineHeight: "150%", fontWeight: "700"}],
-        "p": ["16px", { lineHeight: "150%", fontWeight: "100"}],
+        "p": ["16px", { lineHeight: "150%", fontWeight: "300"}],
         "s": ["12px", { lineHeight: "170%", fontWeight: "300"}],
       }
     },
