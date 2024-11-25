@@ -1,20 +1,25 @@
 // Example usage in a page or another component
 import SectionTitle from "../ui/SectionTitle";
 import TextImageSection from "../ui/TextImageSection";
-
+import { projects } from "@/app/data/projectData";
 
 const WorkPage = () => {
   return (
     <div>
       <SectionTitle title="Work" />
 
-      <TextImageSection
-        tag="Case Study"
-        title="Coherent"
-        description="A multi-channel inbox for communications on Gmail, Watsapp and Messenger for healthcare reception teams."
-        buttonText="View Case Study"
-        imageSrc="/images/coherent-thumb.png"
-      />
+      {projects.map((project, index) => (
+        <div key={index} className="mb-16">
+        <TextImageSection
+          key={index}
+          tag={project.tag}
+          title={project.title}
+          description={project.description}
+          buttonText={project.buttonText}
+          imageSrc={project.imageSrc}
+        />
+        </div>
+      ))}
     </div>
   );
 };
