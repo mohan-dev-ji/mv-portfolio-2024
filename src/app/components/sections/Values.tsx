@@ -4,7 +4,7 @@ import ValuesElement from "../ui/ValuesElement";
 
 const ValuesSection = () => {
   return (
-    <div className="max-w-[910px] mx-auto px-5 sm:px-0">
+    <div className="max-w-[910px] mx-auto">
       <SectionTitle title="Values" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {values.map((value, index) => (

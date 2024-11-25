@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { buttonVariants } from "@/components/ui/button"
+import Image from 'next/image';
 
 interface TextImageSectionProps {
   tag: string;
@@ -30,9 +31,12 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
         {buttonText}
         </Link> 
       </div>
-      <div className="flex-1 mt-4 md:mt-0">
-        <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
-      </div>
+      <Image
+        src={imageSrc}
+        alt={title}
+        width={426}
+        height={300}
+      />
     </div>
   );
 };
