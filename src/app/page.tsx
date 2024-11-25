@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="sm:w-full w-full mx-auto">
       <Hero />
-      <div className="mx-5">
+      <div className="mx-5 mt-16">
       <Work />
       </div>
       <div className="mx-5">
