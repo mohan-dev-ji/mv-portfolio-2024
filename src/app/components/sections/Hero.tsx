@@ -25,10 +25,10 @@ const Hero = () => {
       />
       </div>
       <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-32 lg:px-32 flex flex-col">
-      <div className="w-[250px] md:w-[350px] h-fit">
+      <div className="w-[250px] md:w-[400px] h-fit">
         <div className="text-left">
           <h3 className="md:text-h3-bold text-p-bold text-secondary">{heroData.top}</h3>
-          <h2 className="md:text-h2-bold text-h3-bold text-primary">{heroData.name}</h2>
+          <h2 className="md:text-h1-bold text-h3-bold text-primary">{heroData.name}</h2>
           <h2 className="md:text-h2 text-h3 text-secondary mb-6">{heroData.title}</h2>
 
           <h3 className="md:text-h3-bold text-p-bold  text-primary mb-6">{heroData.tag}</h3>
