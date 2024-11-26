@@ -1,7 +1,5 @@
 // Example usage in a page or another component
 import SectionTitle from "../ui/SectionTitle";
-
-import { projects } from "@/app/data/projectData";
 import TitleTextImageElement from "../ui/TitleTextImageElement";
 import { abouts } from "@/app/data/aboutData";
 
