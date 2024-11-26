@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Hero from './components/sections/Hero'
 import Work from './components/sections/Work'
 import Values from './components/sections/Values'
+import About from './components/sections/About'
 
 export const metadata: Metadata = {
   title: 'Mo | Home',
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <div className="mx-5">
       <Values />
+      </div>
+      <div className="mx-5">
+      <About />
       </div>
       
     </div>
