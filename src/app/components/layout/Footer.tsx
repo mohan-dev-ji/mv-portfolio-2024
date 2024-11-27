@@ -31,7 +31,7 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/in/mohan-veraitch-a229a990/" className="text-secondary hover:text-primary">LinkedIn</Link>
           </div>
           <div>
-            <h3 className="font-bold mb-4">Let's Work Together</h3>
+            <h3 className="font-bold mb-4">Let&apos;s Work Together</h3>
             <p className="mb-4">Tell me about your project</p>
             <Button asChild variant="default">
               <Link href="/contact">Contact</Link>
