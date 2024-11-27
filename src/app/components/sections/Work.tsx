@@ -1,5 +1,3 @@
-// Example usage in a page or another component
-import SectionTitle from "../ui/SectionTitle";
 import TextImageSection from "../ui/TextImageSection";
 import { projects } from "@/app/data/projectData";
 
