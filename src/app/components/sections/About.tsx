@@ -1,12 +1,11 @@
 // Example usage in a page or another component
-import SectionTitle from "../ui/SectionTitle";
 import TitleTextImageElement from "../ui/TitleTextImageElement";
 import { abouts } from "@/app/data/aboutData";
 
 const AboutPage = () => {
   return (
     <div>
-      <SectionTitle title="About" />
+      
 
       {abouts.map((about, index) => (
         <div key={index} className="mb-16">

@@ -3,6 +3,7 @@ import Hero from './components/sections/Hero'
 import Work from './components/sections/Work'
 import Values from './components/sections/Values'
 import About from './components/sections/About'
+import SectionTitle from './components/ui/SectionTitle'
 
 export const metadata: Metadata = {
   title: 'Mo | Home',
@@ -14,12 +15,14 @@ export default function Home() {
     <div className="sm:w-full w-full mx-auto">
       <Hero />
       <div className="mx-5 mt-16">
+      <SectionTitle title="Work" />
       <Work />
       </div>
       <div className="mx-5">
       <Values />
       </div>
       <div className="mx-5">
+      <SectionTitle title="About" />
       <About />
       </div>
       

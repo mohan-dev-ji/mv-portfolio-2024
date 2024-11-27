@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { navItems } from "@/app/data/navItems"
+import { Button } from "@/components/ui/button" 
 
 export default function Navbar() {
 
@@ -20,6 +21,11 @@ export default function Navbar() {
 
             return (
                 <li key={item.path}>
+                    <Button
+                    asChild
+                    variant="ghost"
+                    className={`rounded-full ${isActive ? 'bg-accent text-background' : ''}`}
+                    >
                     <Link
                     href={item.path}
                     className={`
@@ -31,13 +37,8 @@ export default function Navbar() {
                     `}
                     >
                         {item.label}
-                        {/* {isActive && (
-                            <span
-                            className="absolute bottom-0 left-0 w-full h-0.5 bg-black"
-                            arian-hidden="true"
-                            />
-                        )} */}
                     </Link>
+                    </Button>
                 </li>
             )
             })}

@@ -6,7 +6,7 @@ import { projects } from "@/app/data/projectData";
 const WorkPage = () => {
   return (
     <div>
-      <SectionTitle title="Work" />
+      
 
       {projects.map((project, index) => (
         <div key={index} className="mb-16">

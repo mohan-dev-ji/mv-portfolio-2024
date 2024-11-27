@@ -1,8 +1,13 @@
+"use client"
+
+import About from '@/app/components/sections/About'
+import Values from '@/app/components/sections/Values'
+
 export default function AboutPage() {
-    return (
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8">About Me</h1>
-        <p>Coming soon...</p>
+  return (
+    <div className="mx-5 mt-16">
+      <About />
+      <Values />
       </div>
-    )
-  }
+  )
+}
