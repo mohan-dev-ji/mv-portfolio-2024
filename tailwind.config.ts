@@ -22,7 +22,7 @@ export default {
         "h2-bold": ["32px", { lineHeight: "130%",fontWeight: "700"}],
         "h2": ["32px", { lineHeight: "130%", fontWeight: "400"}],
         "h3-bold": ["24px", { lineHeight: "140%", fontWeight: "700"}],
-        "h3": ["24px", { lineHeight: "140%", fontWeight: "500"}],
+        "h3": ["24px", { lineHeight: "140%", fontWeight: "300"}],
         "p-bold": ["16px", { lineHeight: "150%", fontWeight: "700"}],
         "p": ["16px", { lineHeight: "150%", fontWeight: "300"}],
         "s-bold": ["12px", { lineHeight: "170%", fontWeight: "600"}],

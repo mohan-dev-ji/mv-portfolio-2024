@@ -15,6 +15,7 @@ const WorkPage = () => {
           description={project.description}
           buttonText={project.buttonText}
           imageSrc={project.imageSrc}
+          link={`/work/${project.title.toLowerCase().replace(/\s+/g, '-')}`}
         />
         </div>
       ))}
