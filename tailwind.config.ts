@@ -27,7 +27,12 @@ export default {
         "p": ["16px", { lineHeight: "150%", fontWeight: "300"}],
         "s-bold": ["12px", { lineHeight: "170%", fontWeight: "600"}],
         "s": ["12px", { lineHeight: "170%", fontWeight: "300"}],
-      }
+      },
+      utilities: {
+        '.overflow-fix': {
+          '-webkit-mask-image': '-webkit-radial-gradient(white, black)',
+        },
+      },
     },
   },
   plugins: [
