@@ -1,5 +1,3 @@
-import OpeningParagraph from "../components/ui/OpeningParagraph";
-
 export const coherentData = {
     image: "/images/coherent-hero.png",
     title1: 'Overview',
