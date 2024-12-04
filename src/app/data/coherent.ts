@@ -9,4 +9,17 @@ export const coherentData = {
     openingParagraph: "Coherent is a healthcare platform supporting 36 clinics with core administration and payment processing. Our task was to design a multi-channel inbox for Gmail, WhatsApp, and Messenger, enhancing the platform’s functionality beyond payments to improve receptionist efficiency and patient communication.",
     image2: "/images/coherent-banner.png",
     title2: 'The Design Process',
+    text: "I used the Double Diamond design process to Discover, Define, Develop, and Deliver a solution I began with stakeholder interviews, user surveys, and competitor research to shape a clear problem statement. Then guided by insights from an affinity map, persona, and empathy map, I progressed through ideation, wire-framing, and prototyping, I made a user centred prototype that addresses key workflow challenges for medical receptionists.",
+    image3: "/images/double-diamond.png",
+    title3: "Stakeholder Interview",
+    text2: "In the stakeholder interview, talked about the product’s transition from a payment tool to a multichannel communication platform, designed to improve workflows and address cross-platform communication challenges. Success will be measured by saving time for reception teams, improved rebooking rates, and an increase in patient satisfaction through more personalised interactions.",
+    image4: "/images/coherent-goals.png",
+    title4: "Competitor Analysis",
+    competitor1: "Accurx",
+    competitor1Text: "Accurx is a healthcare communication platform designed to streamline and unify communication across the NHS. They provide a single platform for all healthcare-related communication, replacing traditional methods like letters, phones, and pagers.",
+    image5: "/images/coherent-accurx.png",
+    competitor2: "Corti",
+    competitor2Text: "Corti offers two products, Explore and Triage, to guide call-takers through every confusing, problem-laden touchpoint of the emergency call. Corti’s software leverages artificial intelligence during every emergency call and enables all call-takers to consistently improve their performance and assist with detecting critical illnesses.",
+    image6: "/images/coherent-corti.png",
+
   };
