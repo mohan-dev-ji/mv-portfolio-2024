@@ -7,6 +7,7 @@ import OpeningParagraph from '@/app/components/ui/OpeningParagraph';
 import TextSection from '@/app/components/ui/TextSection';
 import TitleTextImageElement from '@/app/components/ui/TitleTextImageElement';
 import PersonaSection from '@/app/components/ui/PersonaSection';
+import ProblemStatement from '@/app/components/ui/ProblemStatement';
 
 export default function CoherentPage() {
   return (
@@ -152,7 +153,23 @@ export default function CoherentPage() {
           pain_text={coherentData.persona_pain_text}
           imageSrc={coherentData.persona_image} />
         </div>
-
+        <div className="max-w-[910px] mx-auto">
+        <SectionTitle title={coherentData.problem_title} />
+        <ProblemStatement 
+        title={coherentData.ps1_title} 
+        description={coherentData.ps1_text}
+        hyp_title={coherentData.ps1_hypothesis_title}
+        hyp_description={coherentData.ps1_hypothesis_text}
+        />
+        <div className='mt-8'>
+        <ProblemStatement 
+        title={coherentData.ps2_title} 
+        description={coherentData.ps2_text}
+        hyp_title={coherentData.ps2_hypothesis_title}
+        hyp_description={coherentData.ps2_hypothesis_text}
+        />
+        </div>
+        </div>
 
 
 

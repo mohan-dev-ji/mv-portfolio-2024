@@ -43,4 +43,13 @@ export const coherentData = {
     persona_pain_title: "Pain Points",
     persona_pain_text: "Sally's daily experience is filled with frequent requests and reminders, leaving her constantly multitasking between booking appointments and managing multiple communication channels. She often questions whether there’s a more efficient way to handle her tasks and feels overwhelmed by the pace and volume of work. These pain points underscore the need for a streamlined solution to reduce her stress and improve task management.",
     persona_image: "/images/coherent-persona.png",
+    problem_title: "Problem Statements",
+    ps1_title: "Problem Statement 1",
+    ps1_text: "Medical receptionists need a way to streamline communications, because there are too many different platforms used by their patients.",
+    ps1_hypothesis_title: "Hypothesis",
+    ps1_hypothesis_text: "I believe that by creating a centralised multichannel communication platform for overwhelmed receptionists, we will enable them to better keep track of all their messages. We will know this to be true when we see a faster response rate to queries.",
+    ps2_title: "Problem Statement 2",
+    ps2_text: "Medical receptionists need a way to automate simple and repetitive tasks because they need more time for tasks that can’t be automated.",
+    ps2_hypothesis_title: "Hypothesis",
+    ps2_hypothesis_text: "I believe that by automating certain existing processes, we will enable busy receptionists to take care of issues that need human interaction. We will know this to be true when there are more patients being onboarded and less missed appointments.",
   };
