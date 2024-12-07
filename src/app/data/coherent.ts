@@ -1,7 +1,7 @@
 export const coherentData = {
     image: "/images/coherent-hero.png",
     title1: 'Overview',
-    openingSentence: "Create features that improve communication triage, task management, and overall usability for reception teams in healthcare clinics.",
+    openingSentence: "To create features that improve communication triage, task management, and overall usability for reception teams in healthcare clinics.",
     CLIENT: "Coherent Healthcare",
     ROLE: "Product Designer",
     Process: "UX Research, Prototyping, User Testing, Wireframing, Iteration, Visual Design.",

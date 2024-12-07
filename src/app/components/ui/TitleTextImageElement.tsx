@@ -29,6 +29,8 @@ const TitleTextImageElement: React.FC<TitleTextImageElementProps> = ({
         alt={title}
         width={428}
         height={300}
+        quality={100}
+        unoptimized
       />
     </div>
   );

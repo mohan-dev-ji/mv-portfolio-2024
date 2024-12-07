@@ -16,6 +16,8 @@ interface StoryboardProps {
                 alt={`Storyboard frame ${index + 1}`}
                 width={274}
                 height={171}
+                quality={100}
+                unoptimized
                 className="w-full h-auto"
               />
               <p className="mt-2 text-center text-p-bold">{frame.caption}</p>

@@ -12,6 +12,9 @@ import Storyboard from '@/app/components/ui/Storyboard';
 import TitleTextSection from '@/app/components/ui/TitleTextSection';
 import TitleTextVideoSection from '@/app/components/ui/TitleTextVideoSection';
 
+import ElevateCard from '@/app/components/sections/ElevateCard';
+import AccCard from '@/app/components/sections/AacCard';
+
 
 export default function CoherentPage() {
   return (
@@ -112,6 +115,8 @@ export default function CoherentPage() {
           alt="User Survey Stats image"
           width={910}
           height={331}
+          quality={100}
+          unoptimized
           layout="responsive"
           className="object-cover object-center"
         />
@@ -141,6 +146,8 @@ export default function CoherentPage() {
           width={910}
           height={376}
           layout="responsive"
+          quality={100}
+          unoptimized
           className="object-cover object-center"
         />
       </div>
@@ -335,6 +342,16 @@ export default function CoherentPage() {
         <SectionTitle title={coherentData.next_title} />
         <TextSection text={coherentData.next_text} />
       </div>
+
+      <div className="max-w-[910px] mx-auto mt-8">
+        <SectionTitle title="Other Work" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {/* <CoherentCard /> */}
+          <ElevateCard />
+          <AccCard />
+        </div>
+      </div>
+
 
       </div>
     </div>

@@ -6,6 +6,7 @@ export interface Project {
     description: string;
     buttonText: string;
     imageSrc: string;
+    imageSrcCard: string;
   }
   
   export const projects: Project[] = [
@@ -14,21 +15,24 @@ export interface Project {
       title: "Coherent",
       description: "A multi-channel inbox for communications on Gmail, Watsapp and Messenger for healthcare reception teams.",
       buttonText: "View Case Study",
-      imageSrc: "/images/coherent-thumb.png"
+      imageSrc: "/images/coherent-thumb.png",
+      imageSrcCard: "/images/coherent-card-image.png"
     },
     {
       tag: "Case Study",
       title: "Elevate4",
       description: "A transformative web application designed to enhance team dynamics and foster organisational growth",
       buttonText: "View Case Study",
-      imageSrc: "/images/elevate-thumb.png"
+      imageSrc: "/images/elevate-thumb.png",
+      imageSrcCard: "/images/elevate-card-image.png"
     },
     {
       tag: "Case Study",
       title: "AAC",
       description: "Augmentative and Alternative Communication (AAC) systems",
       buttonText: "View Case Study",
-      imageSrc: "/images/aac-thumb.png"
+      imageSrc: "/images/aac-thumb.png",
+      imageSrcCard: "/images/aac-card-image.png"
     },
     // Add more projects as needed
   ];

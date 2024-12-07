@@ -38,6 +38,8 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
         alt={title}
         width={426}
         height={300}
+        quality={100}
+        unoptimized
       />
     </div>
   );
