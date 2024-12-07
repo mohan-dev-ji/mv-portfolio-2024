@@ -10,7 +10,6 @@ import PersonaSection from '@/app/components/ui/PersonaSection';
 import ProblemStatement from '@/app/components/ui/ProblemStatement';
 import Storyboard from '@/app/components/ui/Storyboard';
 import TitleTextSection from '@/app/components/ui/TitleTextSection';
-import TextImageSection from '@/app/components/ui/TextImageSection';
 import TitleTextVideoSection from '@/app/components/ui/TitleTextVideoSection';
 
 
