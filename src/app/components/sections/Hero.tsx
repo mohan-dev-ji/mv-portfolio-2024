@@ -15,6 +15,8 @@ const Hero = () => {
       <Image
         src={heroData.image}
         alt="Hero background"
+        quality={100}
+          unoptimized
         fill
         sizes="100vw"
         style={{
@@ -43,6 +45,8 @@ const Hero = () => {
         <Image
           src={heroData.mobile_image}
           alt="Hero background"
+          quality={100}
+          unoptimized
           fill
           sizes="100vw"
           style={{

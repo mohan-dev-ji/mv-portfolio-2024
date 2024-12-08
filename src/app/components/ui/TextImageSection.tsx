@@ -22,17 +22,31 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
   link,
 }) => {
   return (
-    <div className="max-w-[910px] h-[364px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-[24px] border-4 border-hover min-h-[550px] md:min-h-[364px]">
+    <div className="max-w-[910px] h-auto mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-[24px] border-4 border-hover min-h-[550px] md:min-h-[364px]">
+      <div className="md:hidden w-full mb-8">
+        <Image
+          src={imageSrc}
+          alt={title}
+          width={428}
+          height={300}
+          quality={100}
+          unoptimized
+          className="w-full h-auto"
+        />
+      </div>
       <div className="flex-1 md:mr-8">
         <span className="text-s text-secondary">{tag}</span>
-        <h2 className="text-h3-bold text-primary md:mt-8">{title}</h2>
+        <h2 className="text-h3-bold text-primary mt-8">{title}</h2>
         <div className="h-[4px] bg-hover mt-2" /> {/* Underline */}
         <p className="text-p text-secondary mt-4">{description}</p>
         <div className="h-[4px] bg-hover my-4" /> {/* Second Underline */}
-        <Link href={link} className={`${buttonVariants({ variant: "default" })} mr-8 md:mt-4`}>
-        {buttonText}
-        </Link> 
+        <div className="mt-8">
+          <Link href={link} className={`${buttonVariants({ variant: "default" })} mr-8 md:mt-4`}>
+          {buttonText}
+          </Link> 
+        </div>
       </div>
+      <div className="hidden md:block w-full md:w-1/2">
       <Image
         src={imageSrc}
         alt={title}
@@ -41,6 +55,7 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
         quality={100}
         unoptimized
       />
+    </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ export const elevateData = {
     CLIENT: "ELEVATE4",
     ROLE: "Product Designer",
     Process: "UX Research, Prototyping, User Testing, Wireframing, Iteration, Visual Design.",
-    overview_statement_title: "What’s their mission",
+    overview_statement_title: "What’s their mission?",
     overview_statement_text: "Through daily emotional check-ins and data-driven insights ELEVATE4 aims to allow teams to capture individual experiences. This can then be turned into meaningful team-level data to drive personal growth and improve communication.",
     banner: "/images/elevate_banner.png",
     process_title: "My Design Process",
