@@ -1,5 +1,6 @@
 export const heroData = {
     image: "/images/home-hero.png",
+    mobile_image: "/images/hero-image-mobile.png",
     top: 'Hi',
     name: "I'm Mohan Veraitch",
     title: "A Product Designer from London",

@@ -11,7 +11,6 @@ import ProblemStatement from '@/app/components/ui/ProblemStatement';
 import Storyboard from '@/app/components/ui/Storyboard';
 import TitleTextSection from '@/app/components/ui/TitleTextSection';
 import TitleTextVideoSection from '@/app/components/ui/TitleTextVideoSection';
-
 import ElevateCard from '@/app/components/sections/ElevateCard';
 import AccCard from '@/app/components/sections/AacCard';
 
@@ -30,7 +29,6 @@ export default function CoherentPage() {
       </div>
 
       <div className="mx-5">
-      {/* Rest of your page content */}
       <div className="max-w-[910px] mx-auto mb-0">
         <SectionTitle title={coherentData.title1} />
         <OpeningSentence text={coherentData.openingSentence} />
@@ -43,7 +41,6 @@ export default function CoherentPage() {
         title={coherentData.openingParagraphTitle}
         description={coherentData.openingParagraph}
         />
-        {/* Your page content here */}
       </div>
       <div className="relative w-full h-auto mb-8 mt-16">
         <Image
@@ -163,7 +160,7 @@ export default function CoherentPage() {
           pain_title={coherentData.persona_pain_title}
           pain_text={coherentData.persona_pain_text}
           imageSrc={coherentData.persona_image} />
-        </div>
+      </div>
         <div className="max-w-[910px] mx-auto mt-8">
         <SectionTitle title={coherentData.problem_title} />
         <ProblemStatement 
