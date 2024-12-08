@@ -16,10 +16,10 @@ const ContactForm = () => {
     console.log('Current form data:', formData);
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+//   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+//     e.preventDefault();
+//     console.log('Form submitted:', formData);
+//   };
 
   return (
     <div className="max-w-md mx-auto mt-10">
