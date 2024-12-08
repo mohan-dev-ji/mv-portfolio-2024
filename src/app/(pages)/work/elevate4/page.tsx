@@ -9,13 +9,11 @@ import GridContainer from '@/app/components/ui/IconTitleSentence';
 import TitleTextImageElement from '@/app/components/ui/TitleTextImageElement';
 import ImageTitleTextElement from '@/app/components/ui/ImageTitleTextElement';
 import ValuesElement from '@/app/components/ui/ValuesElement';
-import TitleTextSection from '@/app/components/ui/TitleTextSection';
 import TitleChildrentSection from '@/app/components/ui/TitleChildrenSection';
 import TextSection from '@/app/components/ui/TextSection';
 import PersonaSection from '@/app/components/ui/PersonaSection';
 import ProblemStatement from '@/app/components/ui/ProblemStatement';
 import TitleTextVideoSection from '@/app/components/ui/TitleTextVideoSection';
-import TextImageSection from '@/app/components/ui/TextImageSection';
 import CoherentCard from '@/app/components/sections/CoherentCard';
 import AccCard from '@/app/components/sections/AacCard';
 
