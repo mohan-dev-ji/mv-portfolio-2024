@@ -68,7 +68,12 @@ const ContactForm = () => {
   // };
 
   return (
+    
     <div>
+      <div>
+        {submissionStatus === 'success' && <p>Form submitted successfully!</p>}
+        {submissionStatus === 'error' && <p>Error submitting form. Please try again.</p>}
+      </div>
       <div className="max-w-[910px] mx-auto">
         <SectionTitle title="Get in Touch" />
       </div>
