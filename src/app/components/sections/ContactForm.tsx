@@ -1,9 +1,10 @@
 "use client"
 
 import { Button } from '@/components/ui/button';
-import React from 'react';
+import React, { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
+import emailjs from '@emailjs/browser';
 
 interface FormData {
   name: string;
@@ -13,16 +14,58 @@ interface FormData {
   message: string;
 }
 
-const ContactForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-  ({
+const ContactForm = () => {
+  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const { register, 
+    handleSubmit, 
+    reset,
+    formState: { errors } 
+  } = useForm<FormData>({
     mode: 'onBlur' // This will trigger validation on blur
   });
 
-  const onSubmit = (data: FormData) => {
-    console.log('Form submitted:', data);
+  // const onSubmit: SubmitHandler<FormData> = (data) => {
+  //   console.log('Form submitted:', data);
+  //   reset(); // This should now work without a red underline
+  // };
+
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    setSubmissionStatus('submitting');
+    
+    try {
+      const result = await emailjs.send(
+        serviceId!,
+        templateId!,
+        {
+          from_name: `${data.name} ${data.lastName}`,
+          from_email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        publicKey!
+      );
+
+      console.log(result.text);
+      reset();
+      setSubmissionStatus('success');
+      setTimeout(() => setSubmissionStatus('idle'), 3000);
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      setSubmissionStatus('error');
+      setTimeout(() => setSubmissionStatus('idle'), 3000);
+    }
   };
+
+  
+
+  // const onSubmit = (data: FormData) => {
+  //   console.log('Form submitted:', data);
+  // };
 
   return (
     <div>
