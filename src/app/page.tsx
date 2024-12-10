@@ -6,7 +6,7 @@ import About from './components/sections/About'
 import SectionTitle from './components/ui/SectionTitle'
 
 export const metadata: Metadata = {
-  title: 'Mo | Home',
+  title: 'Mohan Veraitch | Portfolio',
   description: 'Welcome to my portfolio',
 }
 
