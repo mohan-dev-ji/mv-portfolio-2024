@@ -75,7 +75,7 @@ const ContactForm = () => {
         {submissionStatus === 'error' && <p>Error submitting form. Please try again.</p>}
       </div>
       <div className="max-w-[910px] mx-auto">
-        <SectionTitle title="Get in Touch" />
+        <SectionTitle title="Contact Me" />
       </div>
 
       <div className="max-w-[910px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-4 border-hover">
