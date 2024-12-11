@@ -13,7 +13,7 @@ const TitleTextImageElement: React.FC<TitleTextImageElementProps> = ({
   imageSrc,
 }) => {
   return (
-      <div className="max-w-[910px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-[24px] border-4 border-hover">
+      <div className="max-w-[910px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-custom border-hover">
         <div className="md:hidden w-full mb-8">
         <Image
           src={imageSrc}
@@ -22,7 +22,7 @@ const TitleTextImageElement: React.FC<TitleTextImageElementProps> = ({
           height={300}
           quality={100}
           unoptimized
-          className="w-full h-auto"
+          className="w-full h-auto rounded-custom border-custom border-hover"
         />
       </div>
         <div className="w-full md:w-1/2 md:mr-8 mb-8 md:mb-0">
@@ -38,7 +38,7 @@ const TitleTextImageElement: React.FC<TitleTextImageElementProps> = ({
             height={300}
             quality={100}
             unoptimized
-            className="w-full h-auto object-cover rounded-lg"
+            className="w-full h-auto object-cover rounded-custom border-custom border-hover"
           />
         </div>
       </div>

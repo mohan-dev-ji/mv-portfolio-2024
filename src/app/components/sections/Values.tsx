@@ -17,9 +17,8 @@ const ValuesSection = () => {
         ))}
         </div>
       
-      {/* <div className="aspect-w-16 aspect-h-9 my-8 rounded-[24px] border-4 border-hover"> */}
-        <video className="w-full rounded-[24px] border-4 border-hover object-cover p-4
-         my-8" autoPlay loop muted>
+      {/* <div className="aspect-w-16 aspect-h-9 my-8 rounded-custom border-4 border-hover"> */}
+        <video className="max-w-[910px] object-cover p-4 my-8" autoPlay loop muted>
             <source src="/videos/Home-910.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>

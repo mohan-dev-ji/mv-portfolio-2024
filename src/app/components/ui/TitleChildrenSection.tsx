@@ -10,7 +10,7 @@ const TitleChildrentSection: React.FC<TitleChildrentSectionProps> = ({
   children,
 }) => {
   return (
-    <div className="max-w-[910px] mx-auto bg-card rounded-[24px] border-4 border-hover">
+    <div className="max-w-[910px] mx-auto bg-card rounded-custom border-custom border-hover">
       <div className="p-8 py-8">
         <h2 className="text-h3-bold text-primary">{title}</h2>
         <div className="h-[4px] bg-hover mt-2 mb-4" /> {/* Underline */}

@@ -54,6 +54,7 @@ export default function ElevatePage() {
             src={elevateData.hero_image}
             alt="Elevate Hero Image"
             fill
+            
             className="object-cover object-center"
           />
         </div>
@@ -76,10 +77,12 @@ export default function ElevatePage() {
         <div className="relative w-full h-auto mb-8 mt-16">
           <Image
             src={elevateData.banner}
-            alt="Coherent Banner Image"
+            alt="Elevate Banner Image"
             width={1440}
             height={460}
             layout="responsive"
+            quality={100}
+          unoptimized
             className="object-cover object-center"
           />
         </div>
@@ -230,24 +233,24 @@ export default function ElevatePage() {
           <div className="relative max-w-[910px] mx-auto h-auto">
               <Image
                 src={elevateData.userflows1_image}
-                alt="User Stories Image"
+                alt="User Flow 1 Image"
                 width={910}
                 height={588}
                 quality={100}
                 unoptimized
                 layout="responsive"
-                className="object-cover object-center"
+                className="object-cover object-center rounded-custom border-custom border-hover"
               />
               <div className="mt-8">
                 <Image
                   src={elevateData.userflows2_image}
-                  alt="User Stories Image"
+                  alt="User Flow 2 Image"
                   width={910}
                   height={480}
                   quality={100}
                   unoptimized
                   layout="responsive"
-                  className="object-cover object-center"
+                  className="object-cover object-center rounded-custom border-custom border-hover"
                 />
               </div>
             </div>
@@ -261,7 +264,7 @@ export default function ElevatePage() {
           <div className="mt-8">
             <Image
               src={elevateData.paper_wireframes_image}
-              alt="User Stories Image"
+              alt="Paper Wireframes Image"
               width={910}
               height={174}
               quality={100}
@@ -280,7 +283,7 @@ export default function ElevatePage() {
           <div className="mt-8">
             <Image
               src={elevateData.digital_wireframes_image}
-              alt="User Stories Image"
+              alt="Digital Wireframes Image"
               width={910}
               height={508}
               quality={100}
@@ -316,13 +319,13 @@ export default function ElevatePage() {
         <div>
           <Image
             src={elevateData.highfidelity_image1}
-            alt="User Stories Image"
+            alt="High Fidelity Image"
             width={910}
             height={400}
             quality={100}
             unoptimized
             layout="responsive"
-            className="object-cover object-center"
+            className="object-cover object-center rounded-custom border-custom border-hover"
           />
         </div>
         <div className="mt-8">
@@ -341,7 +344,7 @@ export default function ElevatePage() {
             quality={100}
             unoptimized
             layout="responsive"
-            className="object-cover object-center"
+            className="object-cover object-center rounded-custom border-custom border-hover"
           />
         </div>
         <div className="mt-8">

@@ -22,7 +22,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
   link,
 }) => {
   return (
-    <div className="max-w-[397px] h-[610px] mx-auto p-8 bg-card flex flex-col items-center justify-center rounded-[24px] border-4 border-hover min-h-[550px] md:min-h-[364px]">
+    <div className="max-w-[397px] h-[610px] mx-auto p-8 bg-card flex flex-col items-center justify-center rounded-custom border-custom border-hover min-h-[550px] md:min-h-[364px]">
       <div className="flex-1">
         <Image
             src={imageSrc}
@@ -31,6 +31,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
             height={300}
             quality={100}
             unoptimized
+            className="rounded-custom border-custom border-hover"
         />
         <div className="mt-2">
         <span className="text-s text-secondary">{tag}</span>

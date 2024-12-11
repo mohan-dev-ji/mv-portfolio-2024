@@ -23,7 +23,7 @@ const PersonaSection: React.FC<PersonaSectionProps> = ({
 
 }) => {
   return (
-    <div className="max-w-[910px] h-[765] mx-auto p-8 mt-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-[24px] border-4 border-hover min-h-[550px] md:min-h-[364px]">
+    <div className="max-w-[910px] h-[765] mx-auto p-8 mt-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-custom border-hover min-h-[550px] md:min-h-[364px]">
       <div className="flex-1 md:mr-8">
         <span className="text-h1-bold text-primary">{name}</span>
         <h2 className="text-h3-bold text-secondary md:mt-8">{job}</h2>

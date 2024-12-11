@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        'custom': '16px',
+      },
+      borderWidth: {
+        'custom': '4px',   // Example custom width
+      },
       colors: {
         background: "#15202B",
         card: "#1A2734",

@@ -22,7 +22,7 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
   link,
 }) => {
   return (
-    <div className="max-w-[910px] h-auto mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-[24px] border-4 border-hover min-h-[550px] md:min-h-[364px]">
+    <div className="max-w-[910px] h-auto mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-custom border-hover min-h-[550px] md:min-h-[364px]">
       <div className="md:hidden w-full mb-8">
         <Image
           src={imageSrc}
@@ -31,7 +31,7 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
           height={300}
           quality={100}
           unoptimized
-          className="w-full h-auto"
+          className="w-full h-auto rounded-custom border-custom border-hover"
         />
       </div>
       <div className="flex-1 md:mr-8">
@@ -54,6 +54,7 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
         height={300}
         quality={100}
         unoptimized
+        className="rounded-custom border-custom border-hover"
       />
     </div>
     </div>

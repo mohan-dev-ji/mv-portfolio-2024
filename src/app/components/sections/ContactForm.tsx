@@ -78,7 +78,7 @@ const ContactForm = () => {
         <SectionTitle title="Get in Touch" />
       </div>
 
-      <div className="max-w-[910px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-[24px] border-4 border-hover">
+      <div className="max-w-[910px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-4 border-hover">
         <form onSubmit={handleSubmit(onSubmit)} className="w-full space-y-4">
           <div className="flex space-x-8">
             <div className="flex-1">

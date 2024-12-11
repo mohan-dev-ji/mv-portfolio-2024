@@ -24,6 +24,8 @@ export default function CoherentPage() {
           src={coherentData.image}
           alt="Coherent Hero Image"
           fill
+          quality={100}
+          unoptimized
           className="object-cover object-center"
         />
       </div>
@@ -49,6 +51,8 @@ export default function CoherentPage() {
           width={1440}
           height={460}
           layout="responsive"
+          quality={100}
+          unoptimized
           className="object-cover object-center"
         />
       </div>
@@ -56,13 +60,15 @@ export default function CoherentPage() {
         <SectionTitle title={coherentData.title2} />
         <TextSection text={coherentData.text} />
     </div>
-    <div className="relative w-full h-auto my-16">
+    <div className="relative max-w-[910px] mx-auto h-auto mt-16 mb-8">
         <Image
           src={coherentData.image3}
           alt="Double Diamond Image"
-          width={1440}
-          height={455}
+          width={910}
+          height={441}
           layout="responsive"
+          quality={100}
+          unoptimized
           className="object-cover object-center"
         />
       </div>
@@ -70,14 +76,16 @@ export default function CoherentPage() {
         <SectionTitle title={coherentData.title3} />
         <TextSection text={coherentData.text2} />
     </div>
-    <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8 rounded-[24px] border-4 border-hover">
+    <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
         <Image
           src={coherentData.image4}
           alt="Goals Image"
           width={910}
           height={371}
           layout="responsive"
-          className="object-cover object-center"
+          quality={100}
+          unoptimized
+          className="object-cover object-center rounded-custom border-custom border-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto">
@@ -106,7 +114,7 @@ export default function CoherentPage() {
         <SectionTitle title={coherentData.title5} />
         <TextSection text={coherentData.text3} />
     </div>
-    <div className="relative max-w-[910px] mx-auto h-auto my-8 rounded-[24px] border-4 border-hover">
+    <div className="relative max-w-[910px] mx-auto h-auto my-8">
         <Image
           src={coherentData.image8}
           alt="User Survey Stats image"
@@ -115,37 +123,39 @@ export default function CoherentPage() {
           quality={100}
           unoptimized
           layout="responsive"
-          className="object-cover object-center"
+          className="object-cover object-center rounded-custom border-custom border-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto">
         <SectionTitle title={coherentData.title6} />
         <TextSection text={coherentData.text4} />
     </div>
-    <div className="relative max-w-[910px] mx-auto h-auto my-8 mb-8 rounded-[24px] border-4 border-hover">
+    <div className="relative max-w-[910px] mx-auto h-auto my-8 mb-8">
         <Image
           src={coherentData.image9}
-          alt="Goals Image"
+          alt="Interview Image"
           width={910}
           height={478}
+          quality={100}
+          unoptimized
           layout="responsive"
-          className="object-cover object-center"
+          className="object-cover object-center rounded-custom border-custom border-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto">
         <SectionTitle title={coherentData.affinity_title} />
         <TextSection text={coherentData.affinity_text} />
     </div>
-    <div className="relative max-w-[910px] mx-auto h-auto my-8 mb-8 rounded-[24px] border-4 border-hover">
+    <div className="relative max-w-[910px] mx-auto h-auto my-8 mb-8">
         <Image
           src={coherentData.affinity_image}
-          alt="Goals Image"
+          alt="Affinity Map Image"
           width={910}
           height={376}
           layout="responsive"
           quality={100}
           unoptimized
-          className="object-cover object-center"
+          className="object-cover object-center rounded-custom border-custom border-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto">
@@ -181,7 +191,7 @@ export default function CoherentPage() {
         <div className="max-w-[910px] mx-auto mt-8">
         <SectionTitle title={coherentData.stories_title} />
         </div>
-        <div className="relative max-w-[910px] mx-auto h-auto mb-8 rounded-[24px] border-4 border-hover">
+        <div className="relative max-w-[910px] mx-auto h-auto mb-8">
         <Image
           src={coherentData.stories_image}
           alt="User Stories Image"
@@ -190,7 +200,7 @@ export default function CoherentPage() {
           quality={100}
           unoptimized
           layout="responsive"
-          className="object-cover object-center"
+          className="object-cover object-center rounded-custom border-custom border-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto mt-8">
@@ -215,7 +225,7 @@ export default function CoherentPage() {
       <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
         <Image
           src={coherentData.userflow1_image}
-          alt="User Stories Image"
+          alt="User Flow 1 Image"
           width={910}
           height={266}
           quality={100}
@@ -235,7 +245,7 @@ export default function CoherentPage() {
       <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
         <Image
           src={coherentData.userflow2_image}
-          alt="User Stories Image"
+          alt="User Flow 2 Image"
           width={910}
           height={266}
           quality={100}
@@ -312,7 +322,7 @@ export default function CoherentPage() {
           quality={100}
           unoptimized
           layout="responsive"
-          className="object-cover object-center"
+          className="object-cover object-center rounded-custom border-custom border-hover"
         />
       </div>
       <div>
