@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 
 interface FormData {
   name: string;
@@ -78,6 +79,11 @@ const ContactForm = () => {
         <SectionTitle title="Contact Me" />
       </div>
 
+      <motion.div
+        initial={{ scale: 0.5, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
       <div className="max-w-[910px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-4 border-hover">
         <form onSubmit={handleSubmit(onSubmit)} className="w-full space-y-4">
           <div className="flex space-x-8">
@@ -168,6 +174,7 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
+      </motion.div>
     </div>
   );
 };

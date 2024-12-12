@@ -4,6 +4,7 @@ import React from 'react';
 import { buttonVariants } from "@/components/ui/button"
 import Image from 'next/image';
 
+
 interface TextImageSectionProps {
   tag: string;
   title: string;

@@ -4,6 +4,7 @@ import Work from './components/sections/Work'
 import Values from './components/sections/Values'
 import About from './components/sections/About'
 import SectionTitle from './components/ui/SectionTitle'
+import ContactForm from './components/sections/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Mohan Veraitch | Portfolio',
@@ -13,19 +14,21 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="sm:w-full w-full mx-auto">
-      <Hero />
-      <div className="mx-5">
-      <SectionTitle title="Work" />
-      <Work />
-      </div>
-      <div className="mx-5">
-      <Values />
-      </div>
-      <div className="mx-5">
-      <SectionTitle title="About" />
-      <About />
-      </div>
-      
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="work" className="mx-5 pt-[4%]">
+        <Work />
+      </section>
+      <section id="about" className="mx-5 pt-[4%]">
+        <About />
+      </section>
+      <section id="values" className="mx-5 pt-[4%]">
+        <Values />
+      </section>
+      <section id="contact" className="mx-5 pt-[4%]">
+        <ContactForm />
+      </section>
     </div>
   )
 }
