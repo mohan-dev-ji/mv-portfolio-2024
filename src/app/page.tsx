@@ -3,7 +3,6 @@ import Hero from './components/sections/Hero'
 import Work from './components/sections/Work'
 import Values from './components/sections/Values'
 import About from './components/sections/About'
-import SectionTitle from './components/ui/SectionTitle'
 import ContactForm from './components/sections/ContactForm'
 
 export const metadata: Metadata = {
