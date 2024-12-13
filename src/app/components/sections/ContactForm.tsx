@@ -80,11 +80,12 @@ const ContactForm = () => {
       </div>
 
       <motion.div
-        initial={{ scale: 0.5, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-      >
-      <div className="max-w-[910px] mx-auto p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-4 border-hover">
+          initial={{ x: 100 * 1, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+      <div className="max-w-[910px] mx-auto mb-16 p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-4 border-hover">
         <form onSubmit={handleSubmit(onSubmit)} className="w-full space-y-4">
           <div className="flex space-x-8">
             <div className="flex-1">

@@ -12,20 +12,20 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="sm:w-full w-full mx-auto">
+    <div className="w-full">
       <section id="hero">
         <Hero />
       </section>
-      <section id="work" className="mx-5 pt-[4%]">
+      <section id="work" className="mx-5 lg:pt-[4%] pt-[10%]">
         <Work />
       </section>
-      <section id="about" className="mx-5 pt-[4%]">
+      <section id="about" className="mx-5 lg:pt-[4%] pt-[10%]">
         <About />
       </section>
-      <section id="values" className="mx-5 pt-[4%]">
+      <section id="values" className="mx-5 lg:pt-[4%] pt-[10%]">
         <Values />
       </section>
-      <section id="contact" className="mx-5 pt-[4%]">
+      <section id="contact" className="mx-5 lg:pt-[4%] pt-[10%]">
         <ContactForm />
       </section>
     </div>

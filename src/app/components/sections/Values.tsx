@@ -30,10 +30,11 @@ const ValuesSection = () => {
       
       {/* <div className="aspect-w-16 aspect-h-9 my-8 rounded-custom border-4 border-hover"> */}
       <motion.div
-        initial={{ scale: 0.5, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-      >
+          initial={{ x: 100 * -1, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
         <video className="w-full object-cover p-4 my-8" autoPlay loop muted>
             <source src="/videos/Home-920-v2.mp4" type="video/mp4" />
             Your browser does not support the video tag.

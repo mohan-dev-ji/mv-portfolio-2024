@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className="flex-grow pt-16">
+        <main className="overflow-hidden flex-grow pt-16">
           {children}
         </main>
         <Footer />

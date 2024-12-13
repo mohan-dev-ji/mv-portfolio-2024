@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { navItems } from "@/app/data/navItems";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import Image from "next/image";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
@@ -42,16 +43,51 @@ export default function Navbar() {
     }
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="fixed w-full top-0 backdrop-blur-md z-50 border-b-4 border-accent">
-      <nav className="bg-background bg-opacity-60 mx-auto px-4 py-6 flex justify-between items-center">
+    <header className="fixed w-full top-0 backdrop-blur-md z-50 border-b-4 border-accent h-20">
+      <nav className="bg-background bg-opacity-60 mx-auto px-4 h-full flex justify-between items-center">
         {/* Left: Name acting as Home button */}
         <div className="text-p-bold text-secondary">
           <Link href="/">Mohan Veraitch</Link>
         </div>
 
-        {/* Center: Navigation items */}
-        <ul className="flex gap-8">
+        {/* BURGER MENU ICON */}
+        <div className="md:hidden">
+        <button className="p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Image src="/burger-menu.svg" alt="Menu" width={24} height={24} />
+        </button>
+        </div>
+
+        {/* SMALL SCREEN NAV */}
+        <div 
+          className={`lg:hidden absolute top-[80px] left-0 w-full bg-background shadow-md transition-all duration-500 ease-in-out ${
+            isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+          }`}
+        >
+        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <ul className="absolute top-full left-0 w-full bg-background shadow-md">
+            {navItems.map((item) => (
+              <li key={item.sectionId} className="border-b border-accent">
+                <a
+                  href={`#${item.sectionId}`}
+                  className="block px-4 py-2 text-secondary hover:text-primary"
+                  onClick={() => {
+                    scrollToSection(item.sectionId);
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        </div>
+
+        {/* LARGE SCREEN */}
+        <ul className="hidden lg:flex gap-8">
           {navItems.map((item) => (
             <li key={item.sectionId}>
               <Button
@@ -75,7 +111,7 @@ export default function Navbar() {
         </ul>
 
         {/* Right: Non-clickable Product Designer text */}
-        <div className="text-p-bold text-secondary">Product Designer</div>
+        <div className="hidden md:block text-p-bold text-secondary">Product Designer</div>
       </nav>
     </header>
   );

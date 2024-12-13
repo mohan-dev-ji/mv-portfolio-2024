@@ -1,5 +1,9 @@
-export const navItems = [
-  // { label: 'Home', sectionId: 'hero' },
+export interface NavItem {
+  label: string;
+  sectionId: string;
+}
+
+export const navItems: NavItem[] = [
   { label: 'Work', sectionId: 'work' },
   { label: 'About', sectionId: 'about' },
   { label: 'Values', sectionId: 'values' },

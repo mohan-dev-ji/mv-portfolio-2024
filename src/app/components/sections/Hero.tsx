@@ -35,7 +35,7 @@ const Hero = () => {
             <h3 className="md:text-h3-bold text-h2-bold  text-primary mb-6">{heroData.tag}</h3>
             <p className="text-p text-secondary mb-6">{heroData.intro}</p>
               <div className=''>
-                <Link href="/contact" className={`${buttonVariants({ variant: "default" })} mr-8 mb-4`}>
+                <Link href="#contact" className={`${buttonVariants({ variant: "default" })} mr-8 mb-4`}>
                   Get in Touch
                 </Link>
                 <Button variant="outline">Download CV</Button>
