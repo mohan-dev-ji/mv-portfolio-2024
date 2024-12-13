@@ -19,7 +19,7 @@ const CoherentCard = () => {
         description={coherentProject.description}
         buttonText={coherentProject.buttonText}
         imageSrc={coherentProject.imageSrcCard}
-        link={`/work/${coherentProject.title.toLowerCase().replace(/\s+/g, '-')}`}
+        link={`/${coherentProject.title.toLowerCase().replace(/\s+/g, '-')}`}
       />
     </div>
   );

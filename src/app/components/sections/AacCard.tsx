@@ -19,7 +19,7 @@ const AccCard = () => {
         description={AccCardProject.description}
         buttonText={AccCardProject.buttonText}
         imageSrc={AccCardProject.imageSrcCard}
-        link={`/work/${AccCardProject.title.toLowerCase().replace(/\s+/g, '-')}`}
+        link={`/${AccCardProject.title.toLowerCase().replace(/\s+/g, '-')}`}
       />
     </div>
   );

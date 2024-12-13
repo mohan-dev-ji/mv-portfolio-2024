@@ -17,7 +17,7 @@ import AccCard from '@/app/components/sections/AacCard';
 
 export default function CoherentPage() {
   return (
-    <div className="mt-6">
+    <div className="mt-4">
       {/* Full-width hero image */}
       <div className="relative w-full h-[50vh] md:h-[80vh] lg:h-[100vh] mb-8 flex items-center object-contain">
         <Image

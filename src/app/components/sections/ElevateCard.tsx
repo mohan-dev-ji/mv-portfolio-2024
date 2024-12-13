@@ -19,7 +19,7 @@ const ElevateCard = () => {
         description={Elevate4Project.description}
         buttonText={Elevate4Project.buttonText}
         imageSrc={Elevate4Project.imageSrcCard}
-        link={`/work/${Elevate4Project.title.toLowerCase().replace(/\s+/g, '-')}`}
+        link={`/${Elevate4Project.title.toLowerCase().replace(/\s+/g, '-')}`}
       />
     </div>
   );

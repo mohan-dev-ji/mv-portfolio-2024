@@ -48,7 +48,7 @@ export default function ElevatePage() {
 
 
     return (
-      <div className="mt-6">
+      <div className="mt-4">
         <div className="relative w-full h-[50vh] md:h-[80vh] lg:h-[100vh] mb-8 flex items-center object-contain">
           <Image
             src={elevateData.hero_image}
@@ -241,7 +241,7 @@ export default function ElevatePage() {
                 layout="responsive"
                 className="object-cover object-center rounded-custom border-custom border-hover"
               />
-              <div className="mt-8">
+              <div className="mt-8 mx-auto h-auto">
                 <Image
                   src={elevateData.userflows2_image}
                   alt="User Flow 2 Image"
