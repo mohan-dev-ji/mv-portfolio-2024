@@ -15,12 +15,12 @@ export default {
         'custom': '4px',   // Example custom width
       },
       colors: {
-        background: "#15202B",
-        card: "#1A2734",
-        hover: "#23303C",
-        secondary: "#8897A5",
+        background: "#0D0D0D",
+        card: "#191919",
+        hover: "#343434",
+        secondary: "#C1C1C1",
         primary: "#FDFDFD",
-        accent: "#1EA1F1",
+        accent: "#33DE88",
         turquoise: "#74A49C",
       },
       fontSize: {

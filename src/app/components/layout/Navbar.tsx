@@ -87,7 +87,7 @@ export default function Navbar() {
         </div>
 
         {/* LARGE SCREEN */}
-        <ul className="hidden lg:flex gap-8">
+        <ul className="hidden md:flex gap-8">
           {navItems.map((item) => (
             <li key={item.sectionId}>
               <Button
