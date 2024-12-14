@@ -12,9 +12,6 @@ import GridContainer from "@/app/components/ui/IconTitleSentence"
 import ElevateCard from "@/app/components/sections/ElevateCard"
 import CoherentCard from "@/app/components/sections/CoherentCard"
 
-
-
-
 export default function AccPage() {
 
   const features = [

@@ -71,7 +71,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <li key={item.sectionId} className="border-b border-accent">
                 <a
-                  href={`#${item.sectionId}`}
+                  href={`/#${item.sectionId}`}
                   className="block px-4 py-2 text-secondary hover:text-primary"
                   onClick={() => {
                     scrollToSection(item.sectionId);
