@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { heroData } from '@/app/data/homeHero';
 import { Button } from "@/components/ui/button";
-import { buttonVariants } from "@/components/ui/button"
+
 
 const Hero = () => {
   return (
