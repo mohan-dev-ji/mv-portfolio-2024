@@ -37,7 +37,7 @@ export default {
         
       },
       fontSize: {
-        "caption-s": ["44px", { lineHeight: "120%", fontWeight: "700"}],
+        "caption-s": ["48px", { lineHeight: "120%", fontWeight: "700"}],
         "h1-bold": ["40px", { lineHeight: "120%", fontWeight: "700"}],
         "h1": ["40px", { lineHeight: "120%", fontWeight: "500"}],
         "h2-bold": ["32px", { lineHeight: "130%",fontWeight: "700"}],

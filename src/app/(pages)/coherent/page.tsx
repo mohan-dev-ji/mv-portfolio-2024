@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import { coherentData } from '@/app/data/coherent';
 import SectionTitle from "@/app/components/ui/SectionTitle";
@@ -13,10 +14,25 @@ import TitleTextSection from '@/app/components/ui/TitleTextSection';
 import TitleTextVideoSection from '@/app/components/ui/TitleTextVideoSection';
 import ElevateCard from '@/app/components/sections/ElevateCard';
 import AccCard from '@/app/components/sections/AacCard';
+import { useDarkMode } from '@/contexts/DarkModeContext';
+import { useEffect, useState } from 'react';
 
 
 export default function CoherentPage() {
+  const { isDarkMode } = useDarkMode();
+  const [isMounted, setIsMounted] = useState(false);
+  
+    // Set mounted state to true after component mounts
+    useEffect(() => {
+      setIsMounted(true);
+    }, []);
+  
+    // Render nothing until mounted to avoid hydration issues
+    if (!isMounted) {
+      return null; // You can also return a loading spinner or placeholder if desired
+    }
   return (
+
     <div className="mt-4">
       {/* Full-width hero image */}
       <div className="relative w-full h-[50vh] md:h-[80vh] lg:h-[100vh] mb-8 flex items-center object-contain">
@@ -132,7 +148,7 @@ export default function CoherentPage() {
     </div>
     <div className="relative max-w-[910px] mx-auto h-auto my-8 mb-8">
         <Image
-          src={coherentData.image9}
+          src={isDarkMode ? coherentData.interview_image_dark : coherentData.interview_image_light}
           alt="Interview Image"
           width={910}
           height={478}
@@ -148,7 +164,7 @@ export default function CoherentPage() {
     </div>
     <div className="relative max-w-[910px] mx-auto h-auto my-8 mb-8">
         <Image
-          src={coherentData.affinity_image}
+          src={isDarkMode ? coherentData.affinity_image_dark : coherentData.affinity_image_light}
           alt="Affinity Map Image"
           width={910}
           height={376}

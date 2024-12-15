@@ -7,6 +7,7 @@ import { useCallback } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const router = useRouter();

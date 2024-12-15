@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image';
 import { elevateData } from '@/app/data/elevate';
 import SectionTitle from '@/app/components/ui/SectionTitle';
@@ -16,6 +18,9 @@ import ProblemStatement from '@/app/components/ui/ProblemStatement';
 import TitleTextVideoSection from '@/app/components/ui/TitleTextVideoSection';
 import CoherentCard from '@/app/components/sections/CoherentCard';
 import AccCard from '@/app/components/sections/AacCard';
+import { useDarkMode } from '@/contexts/DarkModeContext';
+import Storyboard from '@/app/components/ui/Storyboard';
+import { useEffect, useState } from 'react';
 
 export default function ElevatePage() {
   const items = [
@@ -46,6 +51,18 @@ export default function ElevatePage() {
     { iconSrc: elevateData.arrow, title: "Team Insights Visualisation", sentence: elevateData.usability_text4 },
   ]
 
+  const { isDarkMode } = useDarkMode();
+  const [isMounted, setIsMounted] = useState(false);
+    
+      // Set mounted state to true after component mounts
+      useEffect(() => {
+        setIsMounted(true);
+      }, []);
+    
+      // Render nothing until mounted to avoid hydration issues
+      if (!isMounted) {
+        return null; // You can also return a loading spinner or placeholder if desired
+      }
 
     return (
       <div className="mt-4">
@@ -205,7 +222,17 @@ export default function ElevatePage() {
 
         <div className="max-w-[910px] mx-auto mt-8">
           <SectionTitle title={elevateData.story_title} />
-          <div className="relative max-w-[910px] mx-auto h-auto mb-8">
+          <Storyboard frames={[
+          { image: elevateData.storyboard1_image, caption: elevateData.storyboard1 },
+          { image: elevateData.storyboard2_image, caption: elevateData.storyboard2 },
+          { image: elevateData.storyboard3_image, caption: elevateData.storyboard3 },
+          { image: elevateData.storyboard4_image, caption: elevateData.storyboard4 },
+          { image: elevateData.storyboard5_image, caption: elevateData.storyboard5 },
+          { image: elevateData.storyboard6_image, caption: elevateData.storyboard6 },
+          { image: elevateData.storyboard7_image, caption: elevateData.storyboard7 },
+          { image: elevateData.storyboard8_image, caption: elevateData.storyboard8 },
+        ]} />
+          {/* <div className="relative max-w-[910px] mx-auto h-auto mb-8">
               <Image
                 src={elevateData.storyboard_image}
                 alt="User Stories Image"
@@ -216,7 +243,7 @@ export default function ElevatePage() {
                 layout="responsive"
                 className="object-cover object-center"
               />
-            </div>
+            </div> */}
         </div>
 
         <div className="max-w-[910px] mx-auto mt-8">
@@ -232,7 +259,7 @@ export default function ElevatePage() {
           <SectionTitle title={elevateData.userflows_title} />
           <div className="relative max-w-[910px] mx-auto h-auto">
               <Image
-                src={elevateData.userflows1_image}
+                src={isDarkMode ? elevateData.userflows1_image_dark : elevateData.userflows1_image_light}
                 alt="User Flow 1 Image"
                 width={910}
                 height={588}
@@ -243,7 +270,7 @@ export default function ElevatePage() {
               />
               <div className="mt-8 mx-auto h-auto">
                 <Image
-                  src={elevateData.userflows2_image}
+                  src={isDarkMode ? elevateData.userflows2_image_dark : elevateData.userflows2_image_light}
                   alt="User Flow 2 Image"
                   width={910}
                   height={480}

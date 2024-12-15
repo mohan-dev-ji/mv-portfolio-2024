@@ -41,8 +41,10 @@ const Hero = () => {
         <div className="relative z-10 w-full max-w-[910px] mx-auto px-8">
           <div className="w-auto md:w-[700px] h-fit">
             <div className="text-center md:text-left">
-              <h2 className="text-caption-s text-light-primary dark:text-dark-primary mb-8">{heroData.name}</h2>
-              <h2 className="text-h3 text-light-secondary dark:text-dark-secondary mb-8">{heroData.title}</h2>
+              <h2 className="text-caption-s text-light-accent dark:text-dark-accent">{heroData.name}</h2>
+              <h2 className="text-h1-bold text-light-primary dark:text-dark-primary">{heroData.job}</h2>
+              <h2 className="text-h1-bold text-light-primary dark:text-dark-primary mb-6">{heroData.from}</h2>
+              <h2 className="text-h3 text-light-secondary dark:text-dark-secondary mb-8">{heroData.text}</h2>
               <div className='text-light-primary dark:text-dark-primary'>
                 <Button variant="outline" asChild>
                   <a 
