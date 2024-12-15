@@ -30,11 +30,6 @@ const ContactForm = () => {
     mode: 'onBlur' // This will trigger validation on blur
   });
 
-  // const onSubmit: SubmitHandler<FormData> = (data) => {
-  //   console.log('Form submitted:', data);
-  //   reset(); // This should now work without a red underline
-  // };
-
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     setSubmissionStatus('submitting');
     
@@ -62,12 +57,6 @@ const ContactForm = () => {
     }
   };
 
-  
-
-  // const onSubmit = (data: FormData) => {
-  //   console.log('Form submitted:', data);
-  // };
-
   return (
     
     <div>
@@ -85,11 +74,11 @@ const ContactForm = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
-      <div className="max-w-[910px] mx-auto mb-16 p-8 bg-card flex flex-col md:flex-row items-center justify-between rounded-custom border-4 border-hover">
+      <div className="max-w-[910px] mx-auto mb-16 p-8 bg-light-card dark:bg-dark-card flex flex-col md:flex-row items-center justify-between rounded-custom border-4 border-light-hover dark:border-dark-hover">
         <form onSubmit={handleSubmit(onSubmit)} className="w-full space-y-4">
           <div className="flex space-x-8">
             <div className="flex-1">
-              <label htmlFor="name" className="block mb-2 text-p-bold text-secondary">First name</label>
+              <label htmlFor="name" className="block mb-2 text-p-bold text-light-secondary dark:text-dark-secondary">First name</label>
               <input
                 {...register("name", { required: "First name is required",
                   minLength: { value: 2, message: "Name must be at least 2 characters long" },
@@ -97,21 +86,21 @@ const ContactForm = () => {
                 })}
                
                 
-                className="w-full px-3 py-2 border rounded-md text-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
                 placeholder="Enter your first name"
               />
               {errors.name && <span className="text-red-500">{errors.name.message}</span>}
             </div>
 
             <div className="flex-1">
-              <label htmlFor="lastName" className="block mb-2 text-p-bold text-secondary">Last Name</label>
+              <label htmlFor="lastName" className="block mb-2 text-p-bold text-light-secondary dark:text-dark-secondary">Last Name</label>
               <input
                 {...register("lastName", { required: "Last name is required",
                   minLength: { value: 2, message: "Name must be at least 2 characters long" },
                   maxLength: { value: 50, message: "Name must not exceed 50 characters" }
                 })}
 
-                className="w-full px-3 py-2 border rounded-md text-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
                 placeholder="Enter your last name"
               />
               {errors.lastName && <span className="text-red-500">{errors.lastName.message}</span>}
@@ -120,7 +109,7 @@ const ContactForm = () => {
 
           <div className="flex space-x-8">
             <div className="flex-1">
-              <label htmlFor="email" className="block mt-4 mb-2 text-p-bold text-secondary">Email</label>
+              <label htmlFor="email" className="block mt-4 mb-2 text-p-bold text-light-secondary dark:text-dark-secondary">Email</label>
               <input
                 {...register("email", { 
                   required: "Email is required",
@@ -132,21 +121,21 @@ const ContactForm = () => {
                     message: "Invalid email address"
                   }
                 })}
-                className="w-full px-3 py-2 border rounded-md text-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
                 placeholder="Enter your email"
               />
               {errors.email && <span className="text-red-500">{errors.email.message}</span>}
             </div>
 
             <div className="flex-1">
-              <label htmlFor="subject" className="block mt-4 mb-2 text-p-bold text-secondary">Subject</label>
+              <label htmlFor="subject" className="block mt-4 mb-2 text-p-bold text-light-secondary dark:text-dark-secondary">Subject</label>
               <input
                 {...register("subject", { required: "Subject is required",
                   minLength: { value: 2, message: "Name must be at least 2 characters long" },
                   maxLength: { value: 50, message: "Name must not exceed 50 characters" }
 
                  })}
-                className="w-full px-3 py-2 border rounded-md text-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
                 placeholder="Enter the subject"
               />
               {errors.subject && <span className="text-red-500">{errors.subject.message}</span>}
@@ -154,14 +143,14 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label htmlFor="message" className="block mt-8 mb-2 text-p-bold text-secondary">Message</label>
+            <label htmlFor="message" className="block mt-8 mb-2 text-p-bold text-light-secondary dark:text-dark-secondary">Message</label>
             <textarea
               {...register("message", { required: "Message is required",
                 minLength: { value: 2, message: "Name must be at least 2 characters long" },
                 maxLength: { value: 500, message: "Name must not exceed 500 characters" }
 
                })}
-              className="w-full px-3 py-2 border rounded-md text-background text-p"
+              className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
               placeholder="Enter your message"
               rows={5}
             />

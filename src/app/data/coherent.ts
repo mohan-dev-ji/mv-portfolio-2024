@@ -93,6 +93,11 @@ export const coherentData = {
     high_text: "With the new interface design Sally can see results and make decisions based on tangible data collected by the Coherent Healthcare CRM.  This gives her more confidence that patients will always receive the care they deserve.  Her and the reception team are in complete control of all information flowing in and out of the clinic.",
     high_image2: "/images/coherent-components2.png",
     high_image3: "/images/coherent-finalscreens.png",
+    final_image1: "/images/Coherent-final-1.png",
+    final_image2: "/images/Coherent-final-2.png",
+    final_image3: "/images/Coherent-final-3.png",
+    final_image4: "/images/Coherent-final-4.png",
+    final_image5: "/images/Coherent-final-5.png",
     next_title: "Next Steps...",
     next_text: "With the new interface design Sally can see results and make decisions based on tangible data collected by the Coherent Healthcare CRM.  This gives her more confidence that patients will always receive the care they deserve.  Her and the reception team are in complete control of all information flowing in and out of the clinic.",
   };

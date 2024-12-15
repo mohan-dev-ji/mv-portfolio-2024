@@ -3,35 +3,37 @@
 import Image from 'next/image';
 import { heroData } from '@/app/data/homeHero';
 import { Button } from "@/components/ui/button";
+import { useDarkMode } from '@/contexts/DarkModeContext';
 
 
 const Hero = () => {
+  const { isDarkMode } = useDarkMode();
   return (
-    <div className='relative flex flex-col mt-8 md:mt-4'>
+    <div className='relative flex flex-col mt-8 md:mt-4 bg-light-background dark:bg-dark-background'>
     <div className="relative w-full min-h-[100vh] flex items-center object-contain">
       <div className='absolute inset-0 hidden md:block'>
-      <Image
-        src={heroData.image}
-        alt="Hero background"
-        quality={100}
+        <Image
+          src={isDarkMode ? heroData.image_dark : heroData.image_light}
+          alt="Hero background"
+          quality={100}
           unoptimized
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-          objectPosition: 'center',
-        }}
-        priority
-      />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center',
+          }}
+          priority
+        />
       </div>
       <div className="relative z-10 w-full max-w-[910px] mx-auto px-8">
         <div className="w-auto md:w-[700px] h-fit">
           <div className="text-center md:text-left">
             {/* <h3 className="md:text-h3-bold text-h1 text-secondary">{heroData.top}</h3> */}
-            <h2 className="text-caption-s text-primary mb-8">{heroData.name}</h2>
-            <h2 className="text-h3 text-secondary mb-8">{heroData.title}</h2>
+            <h2 className="text-caption-s text-light-primary dark:text-dark-primary mb-8">{heroData.name}</h2>
+            <h2 className="text-h3 text-light-secondary dark:text-dark-secondary mb-8">{heroData.title}</h2>
            
-              <div className=''>
+              <div className='text-light-primary dark:text-dark-primary'>
               <Button
                 variant="outline"
                 asChild

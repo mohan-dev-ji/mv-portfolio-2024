@@ -6,6 +6,7 @@ import { navItems } from "@/app/data/navItems";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import Image from "next/image";
+import DarkModeToggle from "../ui/ToggleButton";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
@@ -46,10 +47,10 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 backdrop-blur-md z-50 border-b-4 border-accent h-20">
-      <nav className="bg-background bg-opacity-60 mx-auto px-4 h-full flex justify-between items-center">
+    <header className="fixed w-full top-0 backdrop-blur-md z-50 border-b-4 border-light-accent dark:border-dark-accent h-20">
+      <nav className="bg-light-background dark:bg-dark-background bg-opacity-60 mx-auto px-4 h-full flex justify-between items-center">
         {/* Left: Name acting as Home button */}
-        <div className="text-p-bold text-secondary">
+        <div className="text-p-bold text-light-secondary dark:text-dark-secondary">
           <Link href="/">Mohan Veraitch</Link>
         </div>
 
@@ -62,17 +63,17 @@ export default function Navbar() {
 
         {/* SMALL SCREEN NAV */}
         <div 
-          className={`lg:hidden absolute top-[80px] left-0 w-full bg-background shadow-md transition-all duration-500 ease-in-out ${
+          className={`lg:hidden absolute top-[80px] left-0 w-full bg-light-background dark:bg-dark-background shadow-md transition-all duration-500 ease-in-out ${
             isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
           }`}
         >
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <ul className="absolute top-full left-0 w-full bg-background shadow-md">
+          <ul className="absolute top-full left-0 w-full bg-light-background dark:bg-dark-background shadow-md">
             {navItems.map((item) => (
-              <li key={item.sectionId} className="border-b border-accent">
+              <li key={item.sectionId} className="border-b border-light-accent dark:border-dark-accent">
                 <a
                   href={`/#${item.sectionId}`}
-                  className="block px-4 py-2 text-secondary hover:text-primary"
+                  className="block px-4 py-2 text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-primary"
                   onClick={() => {
                     scrollToSection(item.sectionId);
                     setIsMenuOpen(false);
@@ -94,10 +95,10 @@ export default function Navbar() {
                 variant="ghost"
                 className={`rounded-full ${
                   activeSection === item.sectionId
-                    ? "bg-accent text-background"
-                    : ""
-                }`}
-              >
+                        ? "bg-light-accent dark:bg-dark-accent text-light-background dark:text-dark-background"
+                        : "text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-primary"
+                    }`}
+                  >
                 {isHomePage ? (
                   <span onClick={() => scrollToSection(item.sectionId)}>
                     {item.label}
@@ -111,7 +112,10 @@ export default function Navbar() {
         </ul>
 
         {/* Right: Non-clickable Product Designer text */}
-        <div className="hidden md:block text-p-bold text-secondary">Product Designer</div>
+        <div className="hidden md:flex items-center space-x-4">
+          <div className="text-p-bold text-light-secondary dark:text-dark-secondary">Product Designer</div>
+          <DarkModeToggle />
+        </div>
       </nav>
     </header>
   );

@@ -239,7 +239,7 @@ export default function ElevatePage() {
                 quality={100}
                 unoptimized
                 layout="responsive"
-                className="object-cover object-center rounded-custom border-custom border-hover"
+                className="object-cover object-center rounded-custom border-custom border-light-hover dark:border-dark-hover"
               />
               <div className="mt-8 mx-auto h-auto">
                 <Image
@@ -250,7 +250,7 @@ export default function ElevatePage() {
                   quality={100}
                   unoptimized
                   layout="responsive"
-                  className="object-cover object-center rounded-custom border-custom border-hover"
+                  className="object-cover object-center rounded-custom border-custom border-light-hover dark:border-dark-hover"
                 />
               </div>
             </div>

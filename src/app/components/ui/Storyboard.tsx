@@ -20,7 +20,7 @@ interface StoryboardProps {
                 unoptimized
                 className="w-full h-auto"
               />
-              <p className="mt-2 text-center text-p-bold">{frame.caption}</p>
+              <p className="mt-2 text-center text-p-bold text-light-secondary dark:text-dark-secondary">{frame.caption}</p>
             </div>
           ))}
         </div>

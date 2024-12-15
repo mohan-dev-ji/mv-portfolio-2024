@@ -85,7 +85,7 @@ export default function CoherentPage() {
           layout="responsive"
           quality={100}
           unoptimized
-          className="object-cover object-center rounded-custom border-custom border-hover"
+          className="object-cover object-center rounded-custom border-custom border-light-hover dark:border-dark-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto">
@@ -110,7 +110,7 @@ export default function CoherentPage() {
         />
         </div>
     </div>
-    <div className="max-w-[910px] mx-auto">
+    {/* <div className="max-w-[910px] mx-auto">
         <SectionTitle title={coherentData.title5} />
         <TextSection text={coherentData.text3} />
     </div>
@@ -125,7 +125,7 @@ export default function CoherentPage() {
           layout="responsive"
           className="object-cover object-center rounded-custom border-custom border-hover"
         />
-      </div>
+      </div> */}
       <div className="max-w-[910px] mx-auto">
         <SectionTitle title={coherentData.title6} />
         <TextSection text={coherentData.text4} />
@@ -139,7 +139,7 @@ export default function CoherentPage() {
           quality={100}
           unoptimized
           layout="responsive"
-          className="object-cover object-center rounded-custom border-custom border-hover"
+          className="object-cover object-center rounded-custom border-custom border-light-hover dark:border-dark-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto">
@@ -155,7 +155,7 @@ export default function CoherentPage() {
           layout="responsive"
           quality={100}
           unoptimized
-          className="object-cover object-center rounded-custom border-custom border-hover"
+          className="object-cover object-center rounded-custom border-custom border-light-hover dark:border-dark-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto">
@@ -200,7 +200,7 @@ export default function CoherentPage() {
           quality={100}
           unoptimized
           layout="responsive"
-          className="object-cover object-center rounded-custom border-custom border-hover"
+          className="object-cover object-center rounded-custom border-custom border-light-hover dark:border-dark-hover"
         />
       </div>
       <div className="max-w-[910px] mx-auto mt-8">
@@ -338,6 +338,67 @@ export default function CoherentPage() {
           alt="High fidelity components Image"
           width={910}
           height={346}
+          quality={100}
+          unoptimized
+          layout="responsive"
+          className="object-cover object-center"
+        />
+      </div>
+      
+      <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+        <Image
+          src={coherentData.final_image1}
+          alt="High fidelity components Image"
+          width={910}
+          height={585}
+          quality={100}
+          unoptimized
+          layout="responsive"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+        <Image
+          src={coherentData.final_image2}
+          alt="High fidelity components Image"
+          width={910}
+          height={585}
+          quality={100}
+          unoptimized
+          layout="responsive"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+        <Image
+          src={coherentData.final_image3}
+          alt="High fidelity components Image"
+          width={910}
+          height={585}
+          quality={100}
+          unoptimized
+          layout="responsive"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+        <Image
+          src={coherentData.final_image4}
+          alt="High fidelity components Image"
+          width={910}
+          height={585}
+          quality={100}
+          unoptimized
+          layout="responsive"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+        <Image
+          src={coherentData.final_image5}
+          alt="High fidelity components Image"
+          width={910}
+          height={585}
           quality={100}
           unoptimized
           layout="responsive"

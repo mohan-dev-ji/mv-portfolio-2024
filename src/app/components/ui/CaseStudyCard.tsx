@@ -22,7 +22,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
   link,
 }) => {
   return (
-    <div className="max-w-[397px] h-[610px] mx-auto p-8 bg-card flex flex-col items-center justify-center rounded-custom border-custom border-hover min-h-[550px] md:min-h-[364px]">
+    <div className="max-w-[397px] h-[610px] mx-auto p-8 bg-light-card dark:bg-dark-card flex flex-col items-center justify-center rounded-custom border-custom border-light-hover dark:border-dark-hover min-h-[550px] md:min-h-[364px]">
       <div className="flex-1">
         <Image
             src={imageSrc}
@@ -31,20 +31,19 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
             height={300}
             quality={100}
             unoptimized
-            className="rounded-custom border-custom border-hover"
+            className="rounded-custom border-custom border-light-hover dark:border-dark-hover"
         />
         <div className="mt-2">
-        <span className="text-s text-secondary">{tag}</span>
-        <h2 className="text-h3-bold text-primary mt-2">{title}</h2>
-        <div className="h-[4px] bg-hover mt-2" /> {/* Underline */}
-        <p className="text-p text-secondary mt-4">{description}</p>
+        <span className="text-s text-light-secondary dark:text-dark-secondary">{tag}</span>
+        <h2 className="text-h3-bold text-light-primary dark:text-dark-primary mt-2">{title}</h2>
+        <div className="h-[4px] bg-light-hover dark:bg-dark-hover mt-2" /> {/* Underline */}
+        <p className="text-p text-light-secondary dark:text-dark-secondary mt-4">{description}</p>
 
         <Link href={link} className={`${buttonVariants({ variant: "default" })} mr-8 mt-4`}>
         {buttonText}
         </Link> 
         </div>
       </div>
-      
     </div>
   );
 };

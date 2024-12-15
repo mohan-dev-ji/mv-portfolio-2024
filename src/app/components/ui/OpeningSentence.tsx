@@ -7,7 +7,8 @@ interface OpeningSentenceProps {
   const OpeningSentence: React.FC<OpeningSentenceProps> = ({ text }) => {
     return (
       <div className="max-w-[910px] mx-auto">
-        <p className="text-left text-h3 text-secondary">{text}</p>
+        <p className="text-left text-h3 text-light-secondary dark:text-dark-secondary
+">{text}</p>
       </div>
     );
   };

@@ -6,6 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       borderRadius: {
@@ -15,13 +16,25 @@ export default {
         'custom': '4px',   // Example custom width
       },
       colors: {
-        background: "#0D0D0D",
-        card: "#191919",
-        hover: "#343434",
-        secondary: "#C1C1C1",
-        primary: "#FDFDFD",
-        accent: "#33DE88",
-        turquoise: "#74A49C",
+        light: {
+          background: "#CCCCCC",
+          card: "#B8B8B8",
+          hover: "#9E9E9E",
+          secondary: "#081512",
+          primary: "#0A2020",
+          accent: "#398977",
+          turquoise: "#74A49C",
+        },
+        dark: {
+          background: "#0D0D0D",
+          card: "#191919",
+          hover: "#343434",
+          secondary: "#C1C1C1",
+          primary: "#FDFDFD",
+          accent: "#33DE88",
+          turquoise: "#74A49C",
+        },
+        
       },
       fontSize: {
         "caption-s": ["44px", { lineHeight: "120%", fontWeight: "700"}],

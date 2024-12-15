@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from 'next'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import { DarkModeProvider } from '../contexts/DarkModeContext';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <DarkModeProvider>
       <body className={inter.className}>
         <Navbar />
         <main className="overflow-hidden flex-grow pt-16">
@@ -25,6 +27,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      </DarkModeProvider>
     </html>
   )
 }

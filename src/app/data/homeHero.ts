@@ -1,5 +1,6 @@
 export const heroData = {
-    image: "/images/home-hero-bw.png",
+    image_light: "/images/home-hero-bw-light.png",
+    image_dark: "/images/home-hero-bw-dark.png",
     mobile_image: "/images/hero-image-mobile.png",
     top: 'Hi',
     name: "I'm Mohan Veraitch a Product Designer from London",

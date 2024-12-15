@@ -26,8 +26,8 @@ const IconTitleSentence: React.FC<IconTitleSentenceProps> = ({
         />
       </div>
       <div className="flex-grow">
-        <span className="text-primary text-p-bold mr-2">{title}:</span>
-        <span className="text-secondary text-p">{sentence}</span>
+        <span className="text-light-primary dark:text-dark-primary text-p-bold mr-2">{title}:</span>
+        <span className="text-light-secondary dark:text-dark-primary text-p">{sentence}</span>
       </div>
     </div>
   );
