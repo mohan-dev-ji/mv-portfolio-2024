@@ -10,9 +10,11 @@ import DarkModeToggle from "../ui/ToggleButton";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const isHomePage = pathname === '/';
 
+  // Effect to handle scroll position and set active section
   useEffect(() => {
     if (isHomePage) {
       const handleScroll = () => {
@@ -33,8 +35,9 @@ export default function Navbar() {
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
     }
-  }, [isHomePage]);
+  }, [isHomePage]); // Dependency array includes isHomePage
 
+  // Function to scroll to a specific section
   const scrollToSection = (sectionId: string) => {
     if (isHomePage) {
       const section = document.getElementById(sectionId);
@@ -43,8 +46,6 @@ export default function Navbar() {
       }
     }
   };
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="fixed w-full top-0 backdrop-blur-md z-50 border-b-4 border-light-accent dark:border-dark-accent h-20">
@@ -56,36 +57,32 @@ export default function Navbar() {
 
         {/* BURGER MENU ICON */}
         <div className="md:hidden">
-        <button className="p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <Image src="/burger-menu.svg" alt="Menu" width={24} height={24} />
-        </button>
+          <button className="p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <Image src="/burger-menu.svg" alt="Menu" width={24} height={24} />
+          </button>
         </div>
 
         {/* SMALL SCREEN NAV */}
-        <div 
-          className={`lg:hidden absolute top-[80px] left-0 w-full bg-light-background dark:bg-dark-background shadow-md transition-all duration-500 ease-in-out ${
-            isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
-          }`}
-        >
-        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <ul className="absolute top-full left-0 w-full bg-light-background dark:bg-dark-background shadow-md">
-            {navItems.map((item) => (
-              <li key={item.sectionId} className="border-b border-light-accent dark:border-dark-accent">
-                <a
-                  href={`/#${item.sectionId}`}
-                  className="block px-4 py-2 text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-primary"
-                  onClick={() => {
-                    scrollToSection(item.sectionId);
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        </div>
+        {isMenuOpen && (
+          <div className="absolute top-[80px] left-0 w-full bg-light-background dark:bg-dark-background shadow-md transition-all duration-500 ease-in-out">
+            <ul className="absolute top-full left-0 w-full bg-light-background dark:bg-dark-background shadow-md">
+              {navItems.map((item) => (
+                <li key={item.sectionId} className="border-b border-light-accent dark:border-dark-accent">
+                  <a
+                    href={`/#${item.sectionId}`}
+                    className="block px-4 py-2 text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-primary"
+                    onClick={() => {
+                      scrollToSection(item.sectionId);
+                      setIsMenuOpen(false); // Close the menu after selection
+                    }}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* LARGE SCREEN */}
         <ul className="hidden md:flex gap-8">
@@ -95,10 +92,10 @@ export default function Navbar() {
                 variant="ghost"
                 className={`rounded-full ${
                   activeSection === item.sectionId
-                        ? "bg-light-accent dark:bg-dark-accent text-light-background dark:text-dark-background"
-                        : "text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-primary"
-                    }`}
-                  >
+                    ? "bg-light-accent dark:bg-dark-accent text-light-background dark:text-dark-background"
+                    : "text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-primary"
+                }`}
+              >
                 {isHomePage ? (
                   <span onClick={() => scrollToSection(item.sectionId)}>
                     {item.label}

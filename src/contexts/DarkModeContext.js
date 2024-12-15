@@ -1,40 +1,42 @@
 "use client"
 
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
 const DarkModeContext = createContext();
 
 export const DarkModeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const isDark = localStorage.getItem('darkMode') === 'true';
-    setIsDarkMode(isDark);
+    setMounted(true);
   }, []);
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', isDarkMode);
-    localStorage.setItem('darkMode', isDarkMode);
+    if (mounted) {
+      const updateImageSource = () => {
+        const sources = document.querySelectorAll('picture source');
+        sources.forEach(source => {
+          if (theme === 'dark') {
+            source.media = 'all';
+          } else {
+            source.media = '(prefers-color-scheme: dark)';
+          }
+        });
+      };
 
-    const updateImageSource = () => {
-      const sources = document.querySelectorAll('picture source');
-      sources.forEach(source => {
-        if (isDarkMode) {
-          source.media = 'all';
-        } else {
-          source.media = '(prefers-color-scheme: dark)';
-        }
-      });
-    };
+      updateImageSource();
+    }
+  }, [theme, mounted]);
 
-    updateImageSource();
-  }, [isDarkMode]);
-
-  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+  const toggleDarkMode = () => setTheme(theme === 'dark' ? 'light' : 'dark');
 
   return (
-    <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
-      {children}
+    <DarkModeContext.Provider value={{ isDarkMode: theme === 'dark', toggleDarkMode }}>
+      <div style={{ visibility: mounted ? 'visible' : 'hidden' }}>
+        {children}
+      </div>
     </DarkModeContext.Provider>
   );
 };

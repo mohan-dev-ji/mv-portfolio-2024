@@ -322,7 +322,7 @@ export default function CoherentPage() {
           quality={100}
           unoptimized
           layout="responsive"
-          className="object-cover object-center rounded-custom border-custom border-hover"
+          className="object-cover object-center rounded-custom border-light-hover dark:border-dark-hover"
         />
       </div>
       <div>
