@@ -138,7 +138,7 @@ export default function ActionaidPage() {
                 </div>
             </div>
 
-            <div className="max-w-[910px] mx-auto mb-0">
+            <div className="max-w-[910px] mx-auto">
                 <SectionTitle title={actionaidData.affinity_title} />
                 <TextSection text={actionaidData.affinity_text} />
                 <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
@@ -153,7 +153,7 @@ export default function ActionaidPage() {
                         className="object-cover object-center rounded-custom"
                     />
                 </div>
-                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8">
                     <Image
                         src={isDarkMode ? actionaidData.affinity_insights_image_dark : actionaidData.affinity_insights_image_light}
                         alt="User Flow 1 Image"
@@ -199,6 +199,188 @@ export default function ActionaidPage() {
                     <Image
                         src={actionaidData.hmw_image2}
                         alt="User Flow 1 Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.solution_title} />
+                <TextSection text={actionaidData.solution_text} />
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={actionaidData.solution_image}
+                        alt="User Flow 1 Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.userflows_title} />
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={isDarkMode ? actionaidData.userflows_image1_dark : actionaidData.userflows_image1_light}
+                        alt="User Flow 1 Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={isDarkMode ? actionaidData.userflows_image2_dark : actionaidData.userflows_image2_light}
+                        alt="User Flow 2 Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={isDarkMode ? actionaidData.userflows_image3_dark : actionaidData.userflows_image3_light}
+                        alt="User Flow 3 Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.paper_wireframes_title} />
+                <TextSection text={actionaidData.paper_wireframes_text} />
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={actionaidData.paper_wireframes_image}
+                        alt="Paper Wireframes Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.challenges_title} />
+                <TextSection text={actionaidData.challenges_text1} />
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={actionaidData.challenges_image1}
+                        alt="Design Challenges Image 1"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+                <TextSection text={actionaidData.challenges_text2} />
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={actionaidData.challenges_image2}
+                        alt="Design Challenges Image 2"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+                <TextSection text={actionaidData.challenges_text3} />
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={actionaidData.challenges_image3}
+                        alt="Design Challenges Image 3"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.digital_wireframes_title} />
+                <div className="relative max-w-[910px] mx-auto h-auto mb-8">
+                    <Image
+                        src={actionaidData.digital_wireframes_image}
+                        alt="Digital Wireframes Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.design_system_title} />
+                <div className="relative max-w-[910px] mx-auto h-auto mb-8">
+                    <Image
+                        src={actionaidData.design_system_image}
+                        alt="Digital Wireframes Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center rounded-custom"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.high_fidelity_title} />
+                <div className="relative max-w-[910px] mx-auto h-auto mb-8">
+                    <Image
+                        src={actionaidData.high_fidelity_image}
+                        alt="High fidelity Image"
+                        width={910}
+                        height={280}
+                        quality={100}
+                        unoptimized
+                        layout="responsive"
+                        className="object-cover object-center"
+                    />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mb-0">
+                <SectionTitle title={actionaidData.next_title} />
+                <TextSection text={actionaidData.next_text} />
+                <div className="relative max-w-[910px] mx-auto h-auto mt-8 mb-8">
+                    <Image
+                        src={actionaidData.next_image}
+                        alt="High fidelity Image"
                         width={910}
                         height={280}
                         quality={100}
