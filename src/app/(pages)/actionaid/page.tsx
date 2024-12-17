@@ -14,7 +14,7 @@ import { useEffect, useState } from "react"
 
 
 
-export default function actionaidPage() {
+export default function ActionaidPage() {
 
     const items = [
         { iconSrc: actionaidData.stakeholder_row1_icon, title: actionaidData.stakeholder_row1_title, sentence: actionaidData.stakeholder_row1_text },
