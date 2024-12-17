@@ -17,14 +17,23 @@ export default {
       },
       colors: {
         light: {
-          background: "#CCCCCC",
-          card: "#B8B8B8",
-          hover: "#9E9E9E",
+          background: "#ECECEC",
+          card: "#F7F7F7",
+          hover: "#D8D8D8",
           secondary: "#081512",
           primary: "#0A2020",
           accent: "#398977",
           turquoise: "#74A49C",
         },
+        // light: {
+        //   background: "#CCCCCC",
+        //   card: "#B8B8B8",
+        //   hover: "#9E9E9E",
+        //   secondary: "#081512",
+        //   primary: "#0A2020",
+        //   accent: "#398977",
+        //   turquoise: "#74A49C",
+        // },
         dark: {
           background: "#0D0D0D",
           card: "#191919",

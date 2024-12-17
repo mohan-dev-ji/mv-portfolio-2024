@@ -42,6 +42,8 @@ const PersonaSection: React.FC<PersonaSectionProps> = ({
         unoptimized
         width={337}
         height={765}
+        style={{ height: 'auto' }}
+        className="rounded-custom"
       />
     </div>
   );

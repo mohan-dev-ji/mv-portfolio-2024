@@ -19,7 +19,7 @@ export interface About {
     },
     {
     title: "Career Development",
-    description: "The shifts during COVID prompted me to expand my skillset into Python and full-stack web development, revealing the potential for creating user-friendly apps. My interest in UX/UI design solidified after redesigning an AAC app for my non-verbal autistic son, demonstrating the significant impact of thoughtful design on usability.",
+    description: "The shifts during COVID prompted me to expand my skillset into Python and Full Stack Web Development. I used AI as an aid to help me reach a long term aspiration of creating my own applications. My interest in UX/UI design solidified after redesigning an AAC app for my non-verbal autistic son.",
     imageSrc: "/images/careerddev-image.png"
     },
     {
