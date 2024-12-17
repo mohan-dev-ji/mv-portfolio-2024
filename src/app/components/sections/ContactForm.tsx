@@ -86,7 +86,7 @@ const ContactForm = () => {
                 })}
                
                 
-                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-primary dark:text-dark-primary text-p"
                 placeholder="Enter your first name"
               />
               {errors.name && <span className="text-red-500">{errors.name.message}</span>}
@@ -100,7 +100,7 @@ const ContactForm = () => {
                   maxLength: { value: 50, message: "Name must not exceed 50 characters" }
                 })}
 
-                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-primary dark:text-dark-primary text-p"
                 placeholder="Enter your last name"
               />
               {errors.lastName && <span className="text-red-500">{errors.lastName.message}</span>}
@@ -121,7 +121,7 @@ const ContactForm = () => {
                     message: "Invalid email address"
                   }
                 })}
-                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-primary dark:text-dark-primary text-p"
                 placeholder="Enter your email"
               />
               {errors.email && <span className="text-red-500">{errors.email.message}</span>}
@@ -135,7 +135,7 @@ const ContactForm = () => {
                   maxLength: { value: 50, message: "Name must not exceed 50 characters" }
 
                  })}
-                className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
+                className="w-full px-3 py-2 border rounded-md text-light-primary dark:text-dark-primary text-p"
                 placeholder="Enter the subject"
               />
               {errors.subject && <span className="text-red-500">{errors.subject.message}</span>}
@@ -150,7 +150,7 @@ const ContactForm = () => {
                 maxLength: { value: 500, message: "Name must not exceed 500 characters" }
 
                })}
-              className="w-full px-3 py-2 border rounded-md text-light-background dark:text-dark-background text-p"
+              className="w-full px-3 py-2 border rounded-md text-light-primary dark:text-dark-primary text-p"
               placeholder="Enter your message"
               rows={5}
             />
