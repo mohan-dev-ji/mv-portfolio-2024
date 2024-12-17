@@ -13,9 +13,9 @@ import Storyboard from '@/app/components/ui/Storyboard';
 import TitleTextSection from '@/app/components/ui/TitleTextSection';
 import TitleTextVideoSection from '@/app/components/ui/TitleTextVideoSection';
 import ElevateCard from '@/app/components/sections/ElevateCard';
-import AccCard from '@/app/components/sections/AacCard';
 import { useDarkMode } from '@/contexts/DarkModeContext';
 import { useEffect, useState } from 'react';
+import ActionaidCard from '@/app/components/sections/ActionaidCard';
 
 
 export default function CoherentPage() {
@@ -432,7 +432,8 @@ export default function CoherentPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* <CoherentCard /> */}
           <ElevateCard />
-          <AccCard />
+          <ActionaidCard />
+          {/* <AccCard /> */}
         </div>
       </div>
 

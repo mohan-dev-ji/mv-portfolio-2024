@@ -16,7 +16,7 @@ export interface Project {
       description: "A collaborative donation platform that enables groups to easily contribute together while tracking their collective impact for charitable causes.",
       buttonText: "View Case Study",
       imageSrc: "/images/actionaid-thumb.png",
-      imageSrcCard: "/images/coherent-card-image.png"
+      imageSrcCard: "/images/actionaid-card-image.png"
     },
     {
       tag: "Case Study",

@@ -1,5 +1,7 @@
 "use client"
 
+import CoherentCard from "@/app/components/sections/CoherentCard"
+import ElevateCard from "@/app/components/sections/ElevateCard"
 import DetailsSection from "@/app/components/ui/DetailsSection"
 import GridContainer from "@/app/components/ui/IconTitleSentence"
 import OpeningParagraph from "@/app/components/ui/OpeningParagraph"
@@ -388,6 +390,16 @@ export default function ActionaidPage() {
                         layout="responsive"
                         className="object-cover object-center rounded-custom"
                     />
+                </div>
+            </div>
+
+            <div className="max-w-[910px] mx-auto mt-8">
+                <SectionTitle title="Other Work" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <CoherentCard />
+                <ElevateCard />
+                {/* <ActionaidCard /> */}
+                {/* <AccCard /> */}
                 </div>
             </div>
 
