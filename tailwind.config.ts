@@ -13,7 +13,7 @@ export default {
         'custom': '16px',
       },
       borderWidth: {
-        'custom': '4px',   // Example custom width
+        'custom': '3px',   // Example custom width
       },
       colors: {
         light: {

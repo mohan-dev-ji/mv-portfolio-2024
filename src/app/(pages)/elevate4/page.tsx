@@ -383,7 +383,7 @@ export default function ElevatePage() {
         </div>
       </div>
 
-      <div className="max-w-[910px] mx-auto mt-8">
+      <div className="max-w-[910px] mx-auto mt-8 mb-8">
         <SectionTitle title={elevateData.next_title} />
         <TextSection text={elevateData.next_text} />
       </div>

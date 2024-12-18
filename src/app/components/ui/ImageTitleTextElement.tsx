@@ -27,7 +27,7 @@ const ImageTitleTextElement: React.FC<ImageTitleTextElementProps> = ({
       </div>
       <div className="md:w-1/2 md:pl-8">
         <h2 className="text-h3-bold text-light-primary dark:text-dark-primary">{title}</h2>
-        <div className="h-[4px] bg-light-hover dark:bg-dark-hover mt-2 mb-4" /> {/* Underline */}
+        <div className="h-[2px] bg-light-hover dark:bg-dark-hover mt-2 mb-4" /> {/* Underline */}
         <p className="text-p text-light-secondary dark:text-dark-secondary">{description}</p>
       </div>
     </div>

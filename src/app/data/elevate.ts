@@ -61,7 +61,7 @@ export const elevateData = {
     persona_goals_title: "Goals",
     persona_goals_text: "Emily is a dedicated and ambitious designer striving to establish herself as a versatile professional in her field. As a self-motivated learner, she actively seeks out new techniques and skills to enhance her craft keeping her ahead of industry trends. ",
     persona_pain_title: "Pain Points",
-    persona_pain_text: "Emily's continuous learning efforts often go unnoticed, making it challenging for her to demonstrate her growth. She spends considerable time searching for relevant tutorials, and when faced with one-off tasks that require specific processes, she struggles to keep track of the steps due to her focus on learning new methods.",
+    persona_pain_text: "Emily's continuous learning efforts often go unnoticed, making it challenging for her to demonstrate her growth. She spends considerable time searching for relevant tutorials. When she is faced with one-off tasks that require specific processes, she struggles to keep track of the steps due to her focus on learning new methods.",
     persona_image: "/images/elevate_persona_image.png",
     problem_title: "Problem Statement",
     problem_title_text: "A creative graphic designer called Emily needs a way to track her continuous learning at work because all her hard work and intuition often goes unnoticed.",
@@ -82,7 +82,7 @@ export const elevateData = {
     storyboard6_image: "/images/elevate-storyboard-6.png",
     storyboard6: "Gets updated on her team’s journey",
     storyboard7_image: "/images/elevate-storyboard-7.png",
-    storyboard7: "Gets more insights to her team’s feelings",
+    storyboard7: "Gets more insights on her team",
     storyboard8_image: "/images/elevate-storyboard-8.png",
     storyboard8: "She starts her day one step ahead.",
     ideation_title: "Ideation",
@@ -114,11 +114,11 @@ export const elevateData = {
     team_insights_video: "/videos/elevate4-flow2-428x484.mp4",
     highfidelity_title: "High-Fidelity",
     highfidelity_image1: "/images/elevate-high-image1.png",
-    highfidelity_text: "On this iteration I concentrate on refining the style of the design thinking about what would appeal to Emily as she uses the app to track her personal growth at work.  It has to be sleek, stylish, functional and informative displaying the collection of information and data in a graphical way makes the app intuitive.",
+    highfidelity_text: "On this iteration I concentrate on refining the style of the design thinking about what would appeal to Emily as she uses the app to track her personal growth at work.  It has to be sleek, stylish, functional and informative. Displaying the collection of information and data in a graphical way makes the app intuitive.",
     highfidelity_image2: "/images/elevate-high-image2.png",
     highfidelity_image3: "/images/elevate-high-image3.png",
     highfidelity_image4_text: "Emily can filter the insights that the app has collected in the last time frame and focus in on the temperature of her team before a meeting.  This can be extremely useful to detect the well being of her fellow team mates and forecast any potential issues to be weary of.",
     highfidelity_image4: "/images/elevate-high-image4.png",
     next_title: "Next Steps...",
-    next_text: "In summary, this project focused on creating a user-centred, multichannel communications platform for medical receptionists, designed to streamline tasks and reduce stress through intuitive features.  If I had more time I would develop the desktop version to co-exist seamlessly with other applications that are used in office work places."
+    next_text: "In the next steps of dveloping this product I would like to develop a desktop version and  incorporate a more dynamic use of colour to enhance user engagement and emotional resonance."
 };  

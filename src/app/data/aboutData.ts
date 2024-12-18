@@ -9,7 +9,7 @@ export interface About {
   export const abouts: About[] = [
     {
       title: "Background",
-      description: "I'm a Product Designer with over a decade of experience in the media industry. Growing up in London with hardworking immigrant parents, I developed a strong work ethic from an early age. My passion for visual arts led me to study fine art at Kingston University, where I honed my design skills and explored architecture and organic forms.",
+      description: "I'm a Product Designer with over a decade of experience in the media industry. Growing up in London with hardworking immigrant parents, I developed a strong work ethic from an early age. My passion for visual arts led me to study fine art at Kingston University, where I developed a deep understanding of visual fundamentals such as colour, form, contrast, and composition.",
       imageSrc: "/images/background-image.png"
     },
     {
@@ -29,7 +29,7 @@ export interface About {
     },
     {
     title: "A Decade in Sound",
-    description: "For over a decade, music production has been my creative sanctuary, allowing me to explore sounds across genres and build a rich library for my compositions. While I've paused to focus on designing accessible technology, music remains a core passion, and I plan to return to production to reconnect art and technology with a fresh approach in the future.",
+    description: "For over a decade, music production has been my creative sanctuary, allowing me to explore sounds across genres and build a rich library for my compositions. While I've paused to focus on designing accessible technology, music remains a core passion of mine. I plan to return to production to reconnect art and technology with a fresh approach in the future.",
     imageSrc: "/images/sound-image.png"
     },
     

@@ -12,7 +12,7 @@ export interface Project {
   export const projects: Project[] = [
     {
       tag: "Case Study",
-      title: "actionaid",
+      title: "ActionAid",
       description: "A collaborative donation platform that enables groups to easily contribute together while tracking their collective impact for charitable causes.",
       buttonText: "View Case Study",
       imageSrc: "/images/actionaid-thumb.png",

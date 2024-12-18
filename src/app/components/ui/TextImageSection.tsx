@@ -37,9 +37,9 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
       <div className="flex-1 md:mr-8">
         <span className="text-s text-light-secondary dark:text-dark-secondary">{tag}</span>
         <h2 className="text-h3-bold text-light-primary dark:text-dark-primary mt-8">{title}</h2>
-        <div className="h-[4px] bg-light-hover dark:bg-dark-hover mt-2" /> {/* Underline */}
+        <div className="h-[2px] bg-light-hover dark:bg-dark-hover mt-2" /> {/* Underline */}
         <p className="text-p text-light-secondary dark:text-dark-secondary mt-4">{description}</p>
-        <div className="h-[4px] bg-light-hover dark:bg-dark-hover my-4" /> {/* Second Underline */}
+
         <div className="mt-8">
           <Link href={link} className={`${buttonVariants({ variant: "default" })} mr-8 md:mt-4`}>
           {buttonText}

@@ -36,7 +36,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
         <div className="mt-2">
         <span className="text-s text-light-secondary dark:text-dark-secondary">{tag}</span>
         <h2 className="text-h3-bold text-light-primary dark:text-dark-primary mt-2">{title}</h2>
-        <div className="h-[4px] bg-light-hover dark:bg-dark-hover mt-2" /> {/* Underline */}
+        <div className="h-[2px] bg-light-hover dark:bg-dark-hover mt-2" /> {/* Underline */}
         <p className="text-p text-light-secondary dark:text-dark-secondary mt-4">{description}</p>
 
         <Link href={link} className={`${buttonVariants({ variant: "default" })} mr-8 mt-4`}>

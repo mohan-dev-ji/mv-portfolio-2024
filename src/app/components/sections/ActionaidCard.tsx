@@ -4,7 +4,7 @@ import { projects } from "@/app/data/projectData";
 
 const ActionaidCard = () => {
   // Find the Coherent project data
-  const ActionaidCardProject = projects.find(project => project.title === "actionaid");
+  const ActionaidCardProject = projects.find(project => project.title === "ActionAid");
 
   // If Coherent project is not found, return null or some fallback UI
   if (!ActionaidCardProject) {

@@ -29,10 +29,10 @@ const PersonaSection: React.FC<PersonaSectionProps> = ({
         <h2 className="text-h3-bold text-light-secondary dark:text-dark-secondary md:mt-8">{job}</h2>
         <p className="text-h2 text-light-accent dark:text-dark-accent mt-16">{quote}</p>
         <p className="text-h3-bold text-light-primary dark:text-dark-primary mt-8">{goals_title}</p>
-        <div className="h-[4px] bg-light-hover dark:bg-dark-hover my-4" /> {/* Second Underline */}
+        <div className="h-[2px] bg-light-hover dark:bg-dark-hover my-4" /> {/* Second Underline */}
         <p className="text-p text-light-secondary dark:text-dark-secondary mt-2">{goals_text}</p>
         <p className="text-h3-bold text-light-primary dark:text-dark-primary mt-8">{pain_title}</p>
-        <div className="h-[4px] bg-light-hover dark:bg-dark-hover my-4" /> {/* Second Underline */}
+        <div className="h-[2px] bg-light-hover dark:bg-dark-hover my-4" /> {/* Second Underline */}
         <p className="text-p text-light-secondary dark:text-dark-secondary mt-2">{pain_text}</p>
       </div>
       <Image
